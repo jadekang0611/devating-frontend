@@ -1,8 +1,27 @@
 # Devating Project Proposal
 
-## Project Idea - Group 3 (Abdul James, Jade Kang, Sage Kearney, Daisy Yau)
+## Overview
 
 Do you think pair programming can be romantic? YES!! We’re introducing the next generation of pair programming - a new level of connection. Devating is a matching dating app for developers based on their coding preferences, where there are no pair partners left behind. 
+
+## Team Members:
+- Scrum Master: Jade Kang (certified)
+- Project Manager: Daisy Yau
+- UI Designer: Sage Kearney
+- QA Engineer: Abdul James
+
+## Table of Contents:
+- [User Stories](https://github.com/jadekang0611/devating-frontend#user-stories)
+- [Wireframes](https://github.com/jadekang0611/devating-frontend#wireframes)
+- [Planning](https://github.com/jadekang0611/devating-frontend#planning)
+- [Technologies](https://github.com/jadekang0611/devating-frontend#)
+- [Installation](https://github.com/jadekang0611/devating-frontend#)
+- [Usage](https://github.com/jadekang0611/devating-frontend#)
+- [Testing](https://github.com/jadekang0611/devating-frontend#)
+- [UX Modifications/Hurdles/Unsolved problems](https://github.com/jadekang0611/devating-frontend#)
+- [Future Add-ons](https://github.com/jadekang0611/devating-frontend#)
+- [Contribution Guidelines](https://github.com/jadekang0611/devating-frontend#)
+- [Credits](https://github.com/jadekang0611/devating-frontend#)
 
 ## User Stories:
 
@@ -36,14 +55,15 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 - Reading about other people.
 
 **Ultimate goal**
-- Meet somebody & be completely yourself, gilt free, with that person! No need to hide behind your code :) No commiting out! Build a coding relationship. 
+- Meet somebody & be completely yourself, guilt free, with that person! No need to hide behind your code :) No commiting out! Build a coding relationship. 
 
 ## Wireframes:
 
 ![devating-wireframe](https://user-images.githubusercontent.com/58707118/74559862-53700c80-4f33-11ea-9172-fe1e3ccd1c62.png)
 
-## Models:
+## Planning:
 
+**Back-end Model**
 ![Devating-Backend](https://user-images.githubusercontent.com/58707118/74559820-39362e80-4f33-11ea-9a7b-6ea0b7386c70.jpg)
 
 ```
@@ -57,12 +77,22 @@ UserSchema: {
 }
 ```
 
-## Components:
+**Front-end Components**
 
 ![Devating - Frontend](https://user-images.githubusercontent.com/58707118/74559819-39362e80-4f33-11ea-9caf-c31dbe68c870.jpg)
 
-## Team Members:
-- Scrum Master: Jade Kang (certified)
-- Project Manager: Daisy Yau
-- UI Designer: Sage Kearney
-- QA Engineer: Abdul James
+## Technologies:
+
+## Installation:
+
+## Usage:
+
+## Testing:
+
+## UX Modifications/Hurdles/Unsolved problems:
+
+## Future Add-ons:
+
+## Contribution Guidelines:
+
+## Credits:
