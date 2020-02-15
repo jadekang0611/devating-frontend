@@ -1,6 +1,6 @@
-# Devating Project Proposal
+# Devating : Front-End
 
-## Overview
+## Project Overview
 
 Do you think pair programming can be romantic? YES!! We’re introducing the next generation of pair programming - a new level of connection. Devating is a matching dating app for developers based on their coding preferences, where there are no pair partners left behind. 
 
@@ -14,14 +14,14 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 - [User Stories](https://github.com/jadekang0611/devating-frontend#user-stories)
 - [Wireframes](https://github.com/jadekang0611/devating-frontend#wireframes)
 - [Planning](https://github.com/jadekang0611/devating-frontend#planning)
-- [Technologies](https://github.com/jadekang0611/devating-frontend#)
-- [Installation](https://github.com/jadekang0611/devating-frontend#)
-- [Usage](https://github.com/jadekang0611/devating-frontend#)
-- [Testing](https://github.com/jadekang0611/devating-frontend#)
-- [UX Modifications/Hurdles/Unsolved problems](https://github.com/jadekang0611/devating-frontend#)
-- [Future Add-ons](https://github.com/jadekang0611/devating-frontend#)
-- [Contribution Guidelines](https://github.com/jadekang0611/devating-frontend#)
-- [Credits](https://github.com/jadekang0611/devating-frontend#)
+- [Technologies](https://github.com/jadekang0611/devating-frontend#technologies)
+- [Installation](https://github.com/jadekang0611/devating-frontend#installation)
+- [Usage](https://github.com/jadekang0611/devating-frontend#usage)
+- [Testing](https://github.com/jadekang0611/devating-frontend#testing)
+- [UX Modifications/Hurdles/Unsolved problems](https://github.com/jadekang0611/devating-frontend#ux-modificationshurdlesunsolved-problems)
+- [Future Add-ons](https://github.com/jadekang0611/devating-frontend#future-add-ons)
+- [Contribution Guidelines](https://github.com/jadekang0611/devating-frontend#contribution-guidelines)
+- [Credits](https://github.com/jadekang0611/devating-frontend#credits)
 
 ## User Stories:
 
@@ -62,6 +62,7 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 ![devating-wireframe](https://user-images.githubusercontent.com/58707118/74559862-53700c80-4f33-11ea-9172-fe1e3ccd1c62.png)
 
 ## Planning:
+We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during daily standup. The board includes project tasks for front-end, back-end, and testing.
 
 **Back-end Model**
 ![Devating-Backend](https://user-images.githubusercontent.com/58707118/74559820-39362e80-4f33-11ea-9a7b-6ea0b7386c70.jpg)
@@ -69,11 +70,13 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 ```
 UserSchema: {
  image: String,
- firstName: String,
+ email: String,
+ name: String,
  age: Number,
+ gender: String,
  favoriteActivities: [String],
  favoriteCoding: [String],
- genderInterest: [String]
+ genderInterest: String
 }
 ```
 
@@ -81,7 +84,33 @@ UserSchema: {
 
 ![Devating - Frontend](https://user-images.githubusercontent.com/58707118/74559819-39362e80-4f33-11ea-9caf-c31dbe68c870.jpg)
 
+
+**Bronze version**
+- [ ] CRUD
+- [ ] One Schema
+- [ ] Testing: Jest
+- [ ] Testing: Mocha & Chai
+
+**Silver version**
+- [ ] Styling
+- [ ] User Profile page
+
+**Gold version**
+- [ ] User Authentication
+- [ ] Feature to allow user to have calendar access to book a day for a date
+
+
 ## Technologies:
+- React
+- Axios
+- Flexbox/ CSS Grid
+- Jest & Enzyme
+- Node
+- Express
+- Mongoose API
+- MongoDB
+- Supertest, Mocha & Chai
+
 
 ## Installation:
 
