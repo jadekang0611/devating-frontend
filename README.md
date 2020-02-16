@@ -65,7 +65,7 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during daily standup. The board includes project tasks for front-end, back-end, and testing.
 
 **Back-end Model**
-![Devating-Backend](https://user-images.githubusercontent.com/58707118/74559820-39362e80-4f33-11ea-9a7b-6ea0b7386c70.jpg)
+![Devating Backend](https://user-images.githubusercontent.com/58707118/74598527-13974b00-5041-11ea-8277-b2bfc6f1ed5c.jpg)
 
 ```
 UserSchema: {
@@ -76,7 +76,10 @@ UserSchema: {
  gender: String,
  favoriteActivities: [String],
  favoriteCoding: [String],
- genderInterest: String
+ genderInterest: String,
+ keep: [],
+ password: String,
+ passwordConfirm: String
 }
 ```
 
@@ -87,16 +90,23 @@ UserSchema: {
 
 **Bronze version**
 - [ ] CRUD
+    - [ ] Create new user account : userController
+    - [ ] Read user matches based on favorite activities and favorite coding language : matchController
+    - [ ] Update user matches to user set : matchController
+    - [ ] Update user information : userController
+    - [ ] Delete match from user set : matchController
+    - [ ] Delete user : userController
 - [ ] One Schema
-- [ ] Testing: Jest
+- [ ] Testing: Jest & Enzyme
 - [ ] Testing: Mocha & Chai
 
 **Silver version**
 - [ ] Styling
-- [ ] User Profile page
+- [ ] Additional Schema for User Profile page
 
 **Gold version**
 - [ ] User Authentication
+- [ ] User interaction - to be able to see accepted matches on user dashboard
 - [ ] Feature to allow user to have calendar access to book a day for a date
 
 
