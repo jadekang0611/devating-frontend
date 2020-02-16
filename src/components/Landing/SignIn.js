@@ -2,17 +2,9 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, Switch, Route, Router, Redirect } from 'react-router-dom';
 
-function CreateAccount() {
-  const [inputName, setInputName] = useState('');
+function SignIn() {
   const [inputEmail, setInputEmail] = useState('');
   const [inputPassword, setInputPassword] = useState('');
-  const [inputPasswordConfirm, setInputPasswordConfirm] = useState('');
-
-  function handleNameChange(e) {
-    e.preventDefault();
-    setInputName(e.target.value);
-    console.log(e.target.value);
-  }
 
   function handleEmailChange(e) {
     e.preventDefault();
@@ -26,22 +18,10 @@ function CreateAccount() {
     console.log(e.target.value);
   }
 
-  function handlePasswordConfirmChange(e) {
-    e.preventDefault();
-    setInputPasswordConfirm(e.target.value);
-    console.log(e.target.value);
-  }
-
   return (
     <div>
-      <p>Please fill out the following information</p>
+      <p>Please sign in</p>
       <form>
-        <input
-          type="text"
-          value={inputName}
-          placeholder="Name"
-          onChange={handleNameChange}
-        ></input>
         <input
           type="text"
           value={inputEmail}
@@ -54,16 +34,13 @@ function CreateAccount() {
           placeholder="love1234"
           onChange={handlePasswordChange}
         ></input>
-        <input
-          type="text"
-          value={inputPasswordConfirm}
-          placeholder="love1234"
-          onChange={handlePasswordConfirmChange}
-        ></input>
-        <button type="submit">Next</button>
+
+        <button type="submit">
+          Sign In
+        </button>
       </form>
     </div>
   );
 }
 
-export default CreateAccount;
+export default SignIn;
