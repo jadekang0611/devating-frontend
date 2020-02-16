@@ -1,5 +1,6 @@
 import React from 'react';
 import Login from '../Landing/Login';
+import CreateAccount from '../Landing/CreateAccount';
 import About from '../About/About';
 import Dashboard from '../Dashboard/Dashboard';
 import Loading from '../Loading/Loading';
@@ -13,8 +14,11 @@ import './App.css';
 function App() {
   return (
     <div>
-      <nav><h1>Devating</h1></nav>
+      <nav>
+        <h1>Devating</h1>
+      </nav>
       <Login />
+      <CreateAccount />
       <About />
       <Dashboard />
       <Loading />
