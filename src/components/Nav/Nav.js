@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Switch, Route, Redirect } from 'react-router-dom';
+import './Nav.css';
 
 function Nav() {
   return (
