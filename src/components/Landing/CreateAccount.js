@@ -2,13 +2,17 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, Switch, Route, Router, Redirect } from 'react-router-dom';
 
-function CreateAccount() {
+function CreateAccount(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
+    props.history.push({
+      pathname: '/question/1',
+      state: { name: name, email: email, password: password }
+    });
     alert(setName);
   };
 
