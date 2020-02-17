@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { nominalTypeHack } from 'prop-types';
 
 function MatchCard() {
 const [imgs, setImgs] = useState([
@@ -21,13 +22,27 @@ const [imgs, setImgs] = useState([
     }
 ]);
 
+// set all match cards to display none, except for first match
+const cardStyle = {
+    display: 'block'
+};
+// change display none to display block/flex when next button is clicked
+let currentMatch = 0;
+
+function filterMatches(image){
+    console.log(image.id);
+}
+
+// once next button is clicked, previous match display = none
+
     return (
       <div>
         {imgs.map(image => {
             return (
-              <div key={image.id}>
+              <div key={image.id} style={cardStyle}>
                 <img src={image.img}></img>
                 <h3>Name, age</h3>
+                <button onClick={filterMatches(image)}>next</button>
               </div>
             );
         })}
