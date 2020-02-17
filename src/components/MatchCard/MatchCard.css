@@ -9,9 +9,11 @@ body {
 .match-name-age {
     font-size: 2rem;
 }
+
 .card-container {
     margin: 0 auto;
     text-align: center;
+    /* border: 1px solid white; */
 }
 
 .match-info{
@@ -22,6 +24,7 @@ body {
 }
 
 .icon-container {
+    /* border: 1px solid yellow; */
     display: flex;
     justify-content: space-evenly;
     width: 35%;
@@ -44,7 +47,8 @@ body {
     color: #000241;
     border: .15rem solid white;
     background-color: rgba(255, 255, 255, 0.701);
-    margin-bottom: 1.2rem;
+    display: block;
+    margin: 0 auto 1rem auto;
 
 }
 

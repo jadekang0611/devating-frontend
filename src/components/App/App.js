@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from '../Nav/Nav'
 import SignIn from '../Landing/SignIn';
 import CreateAccount from '../Landing/CreateAccount';
 import About from '../About/About';
@@ -15,16 +16,17 @@ function App() {
   return (
     <div>
       {/* <img src="/images/desktop-background-devating.svg"></img> */}
-      <header>
+      {/* <header>
         <Link to="/home">
           <h1>Devating</h1>
         </Link>
-      </header>
+      </header> */}
       <nav>
-        <ul>
+        <Nav />
+        {/* <ul>
           <li>
             <Link to="about">About</Link>
-          </li>
+          </li> */}
           {/* <li>
             <Link to="/signin">Sign In</Link>
           </li> */}
@@ -32,15 +34,16 @@ function App() {
           {/* {' '} <--- was this supposed to be something? or just an accident? */}
           {/* <Link to="/createAccount">Create a new account</Link>
           </li> */}
-          <li>
+          {/* <li>
             <Link to="/dashboard">See Your Saved Matches</Link>
           </li>
           <li>
             <Link to="/">Devating Gets Your Romantic Programmers</Link>
           </li>
-        </ul>
+        </ul> */}
       </nav>
       <main>
+        <h1>Devating Logo</h1>
         <button>
           <Link to="/createAccount">Create a new account</Link>
         </button>
@@ -56,7 +59,7 @@ function App() {
 
           <Route exact path="/" component={Loading} />
           <Route exact path="/" component={Question} />
-          <Route exact path="/home" component={Results} />
+          <Route exact path="/results" component={MatchCard} />
         </Switch>
         {/* <Loading />
       <Question /> */}

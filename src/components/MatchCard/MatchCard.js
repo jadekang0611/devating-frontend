@@ -50,7 +50,7 @@ function filterMatches(image){
         {imgs.map(image => {
           let first = image[0];
           return (
-            <div key={image.id} style={cardStyle}>
+            <div key={image.id} style={cardStyle} >
               <img src={image.img}></img>
               <div className="match-info">
                 <h3 className="match-name-age">Name, age</h3>
