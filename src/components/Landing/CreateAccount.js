@@ -2,64 +2,42 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, Switch, Route, Router, Redirect } from 'react-router-dom';
 
-function CreateAccount() {
-  const [inputName, setInputName] = useState('');
-  const [inputEmail, setInputEmail] = useState('');
-  const [inputPassword, setInputPassword] = useState('');
-  const [inputPasswordConfirm, setInputPasswordConfirm] = useState('');
+function CreateAccount(props) {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  function handleNameChange(e) {
+  const handleSubmit = e => {
     e.preventDefault();
-    setInputName(e.target.value);
-    console.log(e.target.value);
-  }
-
-  function handleEmailChange(e) {
-    e.preventDefault();
-    setInputEmail(e.target.value);
-    console.log(e.target.value);
-  }
-
-  function handlePasswordChange(e) {
-    e.preventDefault();
-    setInputPassword(e.target.value);
-    console.log(e.target.value);
-  }
-
-  function handlePasswordConfirmChange(e) {
-    e.preventDefault();
-    setInputPasswordConfirm(e.target.value);
-    console.log(e.target.value);
-  }
+    props.history.push({
+      pathname: '/question/1',
+      state: { name: name, email: email, password: password }
+    });
+  };
 
   return (
     <div>
       <p>Please fill out the following information</p>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
-          value={inputName}
+          value={name}
           placeholder="Name"
-          onChange={handleNameChange}
+          onChange={e => setName(e.target.value)}
         ></input>
         <input
           type="text"
-          value={inputEmail}
+          value={email}
           placeholder="dev@devating.com"
-          onChange={handleEmailChange}
+          onChange={e => setEmail(e.target.value)}
         ></input>
         <input
           type="text"
-          value={inputPassword}
+          value={password}
           placeholder="love1234"
-          onChange={handlePasswordChange}
+          onChange={e => setPassword(e.target.value)}
         ></input>
-        <input
-          type="text"
-          value={inputPasswordConfirm}
-          placeholder="love1234"
-          onChange={handlePasswordConfirmChange}
-        ></input>
+
         <button type="submit">Next</button>
       </form>
     </div>
