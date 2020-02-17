@@ -1,0 +1,49 @@
+body {
+  background-image: url('./desktop-background-devating.svg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.sign-in-container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sign-in-prompt {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.sign-in-form {
+  margin: auto;
+}
+
+.sign-in-button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: purple;
+  border: none;
+  border-radius: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.form-control {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  line-height: 2 !important;
+}
+
+.form-control:focus {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
