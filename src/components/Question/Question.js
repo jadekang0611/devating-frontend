@@ -11,9 +11,9 @@ function Question() {
         <div>
             <h2>Create New</h2>
             <QuestOne />
-            <QuestTwo />
-            <QuestThree />
-            <QuestFour />
+            {/* <QuestTwo /> */}
+            {/* <QuestThree />
+            <QuestFour /> */}
         </div>
     );
 }
