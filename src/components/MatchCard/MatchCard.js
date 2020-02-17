@@ -24,8 +24,13 @@ const [imgs, setImgs] = useState([
 
 // set all match cards to display none, except for first match
 const cardStyle = {
-    display: 'block'
+    display: 'none'
 };
+
+const firstMatch = {
+    display:'block'
+}
+// ^maybe I can set image[0] style={firstMatch}
 // change display none to display block/flex when next button is clicked
 let currentMatch = 0;
 
@@ -38,6 +43,7 @@ function filterMatches(image){
     return (
       <div>
         {imgs.map(image => {
+            let first = image[0];
             return (
               <div key={image.id} style={cardStyle}>
                 <img src={image.img}></img>
