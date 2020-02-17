@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from '../Nav/Nav';
 import SignIn from '../Landing/SignIn';
 import CreateAccount from '../Landing/CreateAccount';
 import About from '../About/About';
@@ -15,9 +16,12 @@ function App() {
   return (
     <div>
       <header>
-        <h1>Devating</h1>
+        <Link to="/results">
+          <h1>Devating</h1>
+        </Link>
       </header>
-      <nav>
+      <Nav />
+      {/* <nav>
         <ul>
           <li>
             <Link to="about">About</Link>
@@ -36,18 +40,19 @@ function App() {
             <Link to="/">Devating Gets Your Romantic Programmers</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
       <Switch>
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/createAccount" component={CreateAccount} />
         <Route exact path="/about" component={About} />
         <Route exact path="/dashboard" component={Dashboard} />
+
+        <Route exact path="/" component={Loading} />
+        <Route exact path="/" component={MatchCard} />
+        <Route exact path="/" component={Question} />
+        <Route exact path="/results" component={Results} />
       </Switch>
-      <Loading />
-      <MatchCard />
-      <Question />
-      <Results />
 
       <footer>Copyright &copy; 2020</footer>
     </div>
