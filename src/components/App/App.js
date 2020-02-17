@@ -14,6 +14,7 @@ import './App.css';
 function App() {
   return (
     <div>
+      {/* <img src="/images/desktop-background-devating.svg"></img> */}
       <header>
         <Link to="/home">
           <h1>Devating</h1>
