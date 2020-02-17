@@ -45,7 +45,6 @@ function App() {
         <Route exact path="/dashboard" component={Dashboard} />
       </Switch>
       <Loading />
-      <MatchCard />
       <Question />
       <Results />
 
