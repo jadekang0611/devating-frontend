@@ -1,5 +1,5 @@
 body {
-  background-image: url('./desktop-background-devating.svg');
+  background-image: url('./desktop-background-devating.svg') !important;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,8 +11,6 @@ body {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .sign-in-prompt {
@@ -30,7 +28,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   background-color: #ffffff;
-  color: purple;
+  color: #410042;
   border: none;
   border-radius: 32px;
   padding-top: 8px;
@@ -47,3 +45,4 @@ body {
   background-color: transparent !important;
   color: #ffffff !important;
 }
+
