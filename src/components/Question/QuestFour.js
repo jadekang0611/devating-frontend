@@ -2,7 +2,19 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+import csharp from '../../icons/csharp.svg';
+import java from '../../icons/java.svg';
+import javascript from '../../icons/javascript.svg';
+import nodeJS from '../../icons/nodeJS.svg';
+import php from '../../icons/php.svg';
+import python from '../../icons/python.svg';
+import react from '../../icons/react.svg';
+import sql from '../../icons/sql.svg';
+import swift from '../../icons/swift.svg';
+import './Question.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function QuestFour(props) {
   const [userData, setUserData] = useState([]);
@@ -71,78 +83,132 @@ function QuestFour(props) {
     });
   };
   return (
-    <div>
-      <h3>Some of your favorite activities</h3>
+    <div className="question-container">
       <form onSubmit={handleSubmit}>
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="1"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="2"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="3"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="4"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="5"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="6"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="7"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="8"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="9"
-          onClick={handleToggle}
-        />
-        <div>
-          <p>4 of 4</p>
-
-          <button type="submit">Sign Up</button>
-        </div>
-
+        <Container>
+          <h2 className="question-prompt">
+            Select some of your favorite activities
+          </h2>
+          <Row>
+            <Col>
+              <input
+                type="image"
+                src={csharp}
+                alt="c#"
+                width="80"
+                height="auto"
+                value="1"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={java}
+                alt="java"
+                width="80"
+                height="auto"
+                value="2"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={javascript}
+                alt="javascript"
+                width="80"
+                height="auto"
+                value="3"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <input
+                type="image"
+                src={nodeJS}
+                alt="nodeJS"
+                width="80"
+                height="auto"
+                value="4"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={php}
+                alt="php"
+                width="80"
+                height="auto"
+                value="5"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={python}
+                alt="python"
+                width="80"
+                height="auto"
+                value="6"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <input
+                type="image"
+                src={react}
+                alt="react"
+                width="80"
+                height="auto"
+                value="7"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={sql}
+                alt="sql"
+                width="80"
+                height="auto"
+                value="8"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={swift}
+                alt="swift"
+                width="80"
+                height="auto"
+                value="9"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+          </Row>
+          <div>
+            <button type="submit" className="next-button">
+              Sign Up
+            </button>
+          </div>
+        </Container>
       </form>
     </div>
   );

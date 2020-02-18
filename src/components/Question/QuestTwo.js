@@ -1,18 +1,19 @@
 import React from 'react';
-
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import maleIcon from '../../icons/male.svg';
+import femaleIcon from '../../icons/female.svg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function QuestTwo(props) {
   const [wantGender, setWantGender] = useState('');
 
   function handleWantGender(e) {
-
     e.preventDefault();
     setWantGender(e.target.value);
     console.log(e.target.value);
   }
-
 
   const handleSubmit = el => {
     el.preventDefault();
@@ -30,28 +31,42 @@ function QuestTwo(props) {
   };
 
   return (
-    <div>
+    <div className="question-container">
       <form onSubmit={handleSubmit}>
-        <p>You're Interested In:</p>
-        <input
-          type="image"
-          src="https://user-images.githubusercontent.com/58707118/74623751-dbad0800-5113-11ea-81e9-462ee661a1c0.png"
-          alt="submit"
-          value="Female"
-          onClick={handleWantGender}
-        />
-        <input
-          type="image"
-          src="https://user-images.githubusercontent.com/58707118/74623934-7f96b380-5114-11ea-84a9-0fe8daf9122b.png"
-          alt="submit"
-          value="Male"
-          onClick={handleWantGender}
-        />
-        <div>
-          <p>2 of 4</p>
-          <button type="submit">Next</button>
-        </div>
-
+        <Container>
+          <h2 className="question-prompt">Select a gender of your interest</h2>
+          <Row>
+            <Col>
+              <input
+                type="image"
+                src={femaleIcon}
+                width="110"
+                height="110"
+                alt="submit"
+                value="Female"
+                className="question-icon"
+                onClick={handleWantGender}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={maleIcon}
+                width="110"
+                height="110"
+                alt="submit"
+                value="Male"
+                className="question-icon"
+                onClick={handleWantGender}
+              />
+            </Col>
+          </Row>
+          <div className="question-card-bottom">
+            <button type="submit" className="next-button">
+              Next
+            </button>
+          </div>
+        </Container>
       </form>
     </div>
   );

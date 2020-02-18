@@ -1,6 +1,7 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Link, Switch, Route, Router, Redirect } from 'react-router-dom';
+import { useState } from 'react';
+import './CreateAccount.css';
+import Form from 'react-bootstrap/Form';
 
 function CreateAccount(props) {
   const [name, setName] = useState('');
@@ -16,30 +17,46 @@ function CreateAccount(props) {
   };
 
   return (
-    <div>
-      <p>Please fill out the following information</p>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={name}
-          placeholder="Name"
-          onChange={e => setName(e.target.value)}
-        ></input>
-        <input
-          type="text"
-          value={email}
-          placeholder="dev@devating.com"
-          onChange={e => setEmail(e.target.value)}
-        ></input>
-        <input
-          type="text"
-          value={password}
-          placeholder="love1234"
-          onChange={e => setPassword(e.target.value)}
-        ></input>
-
-        <button type="submit">Next</button>
-      </form>
+    <div className="sign-up-container">
+      <img
+        className="mb-4"
+        src="https://via.placeholder.com/150"
+        alt="devating"
+        width="72"
+        height="72"
+      />
+      <h2 className="sign-up-prompt">Create a new account</h2>
+      <Form className="sign-up-form " onSubmit={handleSubmit}>
+        <Form.Group className="input-field">
+          <Form.Control
+            type="text"
+            value={name}
+            placeholder="Name"
+            onChange={e => setName(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group controlID="formGroupEmail" className="input-field">
+          <Form.Control
+            type="text"
+            value={email}
+            placeholder="dev@devating.com"
+            onChange={e => setEmail(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group controlID="formGroupEmail" className="input-field">
+          <Form.Control
+            type="text"
+            value={password}
+            placeholder="love1234"
+            onChange={e => setPassword(e.target.value)}
+          />
+        </Form.Group>
+        <div className="text-center sign-up-button-container">
+          <button className="sign-up-button" type="submit">
+            Next
+          </button>
+        </div>
+      </Form>
     </div>
   );
 }

@@ -1,6 +1,16 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import cooking from '../../icons/cooking.svg';
+import gaming from '../../icons/gaming.svg';
+import skiing from '../../icons/skiing.svg';
+import traveling from '../../icons/traveling.svg';
+import trekking from '../../icons/trekking.svg';
+import running from '../../icons/speed.svg';
+import './Question.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function QuestThree(props) {
   //const [favActivities, setFavActivities] = useState([]);
@@ -58,57 +68,98 @@ function QuestThree(props) {
     });
   };
   return (
-    <div>
-      <h3>Some of your favorite activities</h3>
+    <div className="question-container">
       <form onSubmit={handleSubmit}>
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="1"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="2"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="3"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="4"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="5"
-          onClick={handleToggle}
-        />
-        <input
-          type="image"
-          src="https://via.placeholder.com/150"
-          alt="submit"
-          value="6"
-          onClick={handleToggle}
-        />
-        <div>
-          <p>3 of 4</p>
-
-          <button type="submit">Next</button>
-        </div>
-
+        <Container>
+          <h2 className="question-prompt">
+            Select some of your favorite activities
+          </h2>
+          <Row>
+            <Col>
+              <input
+                type="image"
+                src={cooking}
+                alt="cooking"
+                width="100"
+                height="auto"
+                value="1"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={gaming}
+                alt="submit"
+                width="100"
+                height="auto"
+                value="2"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={skiing}
+                alt="submit"
+                width="100"
+                height="auto"
+                value="3"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <input
+                type="image"
+                src={traveling}
+                alt="submit"
+                width="100"
+                height="auto"
+                value="4"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={trekking}
+                alt="submit"
+                width="100"
+                height="auto"
+                value="5"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+            <Col>
+              <input
+                type="image"
+                src={running}
+                alt="submit"
+                width="100"
+                height="auto"
+                value="6"
+                className="question-icon"
+                onClick={handleToggle}
+              />
+            </Col>
+          </Row>
+          <div>
+            <button
+              type="submit"
+              className="next-button"
+              id="question-three-button"
+            >
+              Next
+            </button>
+          </div>
+        </Container>
       </form>
     </div>
   );

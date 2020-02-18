@@ -3,7 +3,7 @@ import QuestOne from './QuestOne';
 import QuestTwo from './QuestTwo';
 import QuestThree from './QuestThree';
 import QuestFour from './QuestFour';
-import './question.css';
+import './Question.css';
 
 import { Switch, Route, Router, Redirect } from 'react-router-dom';
 
@@ -16,7 +16,6 @@ function Question() {
       <Route path="/question/4" component={QuestFour} />
     </Switch>
   );
-
 }
 
 export default Question;

@@ -1,29 +1,21 @@
-body {
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.sign-in-container {
+.sign-up-container {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sign-in-prompt {
+.sign-up-prompt {
   text-align: center;
   font-size: 24px;
   margin-bottom: 16px;
 }
 
-.sign-in-form {
-  margin: auto;
+.sign-up-form {
+  max-width: 50%;
 }
 
-.sign-in-button {
+.sign-up-button {
   width: 100%;
   font-size: 16px;
   font-weight: 700;
@@ -33,26 +25,12 @@ body {
   border-radius: 32px;
   padding-top: 8px;
   padding-bottom: 8px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 }
 
-.sign-in-button:hover {
+.sign-up-button:focus {
   border: 1px solid #ffffff;
   background-color: transparent;
   color: white;
-}
-
-.sign-in-button:focus {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ffffff;
-  color: #410042;
-  border: none;
-  border-radius: 32px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   outline: none;
 }
 
@@ -65,5 +43,4 @@ body {
 .form-control:focus {
   background-color: transparent !important;
   color: #ffffff !important;
-  outline: none;
 }

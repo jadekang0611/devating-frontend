@@ -24,9 +24,6 @@ function SignIn(props) {
   function handleSignIn(e) {
     e.preventDefault();
 
-    console.log('Email' + inputEmail);
-    console.log('Password' + inputPassword);
-
     axios.get(url + '/' + inputEmail + '/' + inputPassword).then(res => {
       let user = res.data;
       if (user.length !== 0) {
@@ -44,7 +41,14 @@ function SignIn(props) {
 
   return (
     <div className="sign-in-container">
-      <p className="sign-in-prompt">Please sign in</p>
+      <img
+        className="mb-4"
+        src="https://via.placeholder.com/150"
+        alt="devating"
+        width="72"
+        height="72"
+      />
+      <h2 className="sign-in-prompt">Please sign in</h2>
       <Form className="sign-in-form">
         <Form.Group controlID="formGroupEmail" className="input-field">
           <Form.Control
