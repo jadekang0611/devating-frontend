@@ -1,41 +1,76 @@
 import React from 'react';
-import QuestTwo from './QuestTwo'
 import { useState } from 'react';
-import { Link, Switch, Route, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function QuestOne() {
-    const [userAge, setUserAge] = useState('');
-    const [Usergender, setUserGender] = useState('');
-    // const [submit, setSubmit] = useState('');
+function QuestOne(props) {
+  const [userAge, setUserAge] = useState('');
+  const [userGender, setUserGender] = useState('');
+  // const [submit, setSubmit] = useState('');
 
-    function handleAgeChange(e) {
-        e.preventDefault();
-        setUserAge(e.target.value);
-        console.log(e.target.value);
-    }
+  function handleAgeChange(e) {
+    e.preventDefault();
+    setUserAge(e.target.value);
+    console.log(e.target.value);
+  }
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        setUserGender(e.target.value);
-        console.log(e.target.value);
-    }
+  function handleGender(e) {
+    e.preventDefault();
+    setUserGender(e.target.value);
 
-    return (
+    console.log(e.target.value);
+    console.log(props.location.state.name);
+  }
+
+  const handleSubmit = el => {
+    el.preventDefault();
+    props.history.push({
+      pathname: '/question/2',
+      state: {
+        name: props.location.state.name,
+        email: props.location.state.email,
+        password: props.location.state.password,
+        age: userAge,
+        gender: userGender
+      }
+    });
+  };
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Age"
+          id="age"
+          value={userAge}
+          onChange={handleAgeChange}
+        />
+        <p>Your Gender</p>
+        <input
+          type="image"
+          src="https://user-images.githubusercontent.com/58707118/74623751-dbad0800-5113-11ea-81e9-462ee661a1c0.png"
+          alt="submit"
+          value="Female"
+          onClick={handleGender}
+        />
+        <input
+          type="image"
+          src="https://user-images.githubusercontent.com/58707118/74623934-7f96b380-5114-11ea-84a9-0fe8daf9122b.png"
+          alt="submit"
+          value="Male"
+          onClick={handleGender}
+        />
         <div>
-            <form onClick={handleSubmit}>
-                <input type="text" placeholder="Age" id="age" value={userAge} onChange={handleAgeChange} />
-                <p>Your Gender</p>
-                <input type="image" src="https://user-images.githubusercontent.com/58707118/74623751-dbad0800-5113-11ea-81e9-462ee661a1c0.png" alt="submit" value={Usergender}/>
-                <input type="image" src="https://user-images.githubusercontent.com/58707118/74623934-7f96b380-5114-11ea-84a9-0fe8daf9122b.png" alt="submit" value={Usergender}/>
-                <Link to='/2'>
-                <button type="submit"> 1 / 4 => Next</button>
-                </Link>
-                <Switch>
-                    <Route path='/2' exact component={QuestTwo}/>
-                </Switch>
-            </form>
+          <p>1 of 4</p>
+
+          <button type="submit">
+            Next
+          </button>
         </div>
-    );
+      </form>
+    </div>
+  );
+
 }
 
 export default QuestOne;
