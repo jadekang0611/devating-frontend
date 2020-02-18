@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
 
+
 body {
   background: url('/images/desktop-background-devating.svg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -28,7 +29,6 @@ footer {
 
 
 /* sticky footer from css tricks
-
 HTML
 <body>
   <div class="content">
