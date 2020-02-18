@@ -43,3 +43,11 @@ a {
   display: inline-block;
   text-align: left;
 }
+
+.navbar-toggler {
+  background-color: #ffffff;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+}

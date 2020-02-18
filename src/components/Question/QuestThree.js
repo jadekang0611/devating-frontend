@@ -6,7 +6,7 @@ import gaming from '../../icons/gaming.svg';
 import skiing from '../../icons/skiing.svg';
 import traveling from '../../icons/traveling.svg';
 import trekking from '../../icons/trekking.svg';
-import running from '../../icons/speed.svg';
+import running from '../../icons/running.svg';
 import './Question.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
