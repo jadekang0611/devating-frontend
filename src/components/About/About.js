@@ -1,9 +1,12 @@
 import React from 'react';
 import './About.css';
+import Card from 'react-bootstrap/Card';
+import CardDeck from 'react-bootstrap/CardDeck';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function About() {
   return (
-    <div>
+    <div className="about-container">
       <h2>We love what we do</h2>
       <section>
         Qui reprehenderit dolore laborum velit deserunt irure est ad ex. Dolore
@@ -22,49 +25,128 @@ function About() {
         proident deserunt incididunt nostrud velit consequat non est deserunt.
         Ullamco eu minim qui minim velit.
       </section>
+      <hr></hr>
       <h2>Founders</h2>
-      <h3>Jade Kang</h3>
-      <p>Software Engineer</p>
-      <p>jkang.se@gmail.com</p>
-      <p>linkedInJade..</p>
-      <p>jadeGitHub</p>
-
-      <div>
-        <img
-          src="https://files.slack.com/files-pri/T0351JZQ0-FU2P2MAER/1581884468137.jpg"
-          alt="Jade Kang"
-        />
-        <h3>Daisy Yau</h3>
-        <p>Software Engineer</p>
-        <p>daisy125@gmail.com</p>
-        <p>linkedInDaisy..</p>
-        <p>DaisyGitHub</p>
-        <img
-          src="https://ca.slack-edge.com/T0351JZQ0-UQNFCFLPK-9eaf00fa8ca3-512"
-          alt="Daisy Yau"
-        />
-        <h3>Sage Kearney</h3>
-        <p>Software Engineer</p>
-        <p>sagekearney@gmail.com</p>
-        <p>
-          linkedInSage..
-          <p>SageGitHub</p>
-        </p>
-        <img
-          src="https://files.slack.com/files-pri/T0351JZQ0-FU2QJPXK2/small.jpg"
-          alt="Sage Kearney"
-        />
-        <h3>Abdul James</h3>
-        <p>Software Engineer</p>
-        <p>AbdulJames2020@gmail.com</p>
-        <p>https://www.linkedin.com/in/abdul-s-james-031975/</p>
-        <p>https://github.com/sewatu999/</p>
-
-        <img
-          src="https://ca.slack-edge.com/T0351JZQ0-UQNFCEPQR-fddec0ff9d8e-512"
-          alt="Abdul James"
-        />
-      </div>
+      <CardDeck>
+        <Card>
+          <Card.Img variant="top" src="./images/jade.png" />
+          <Card.Body>
+            <Card.Title>Jade Kang, Scrum Master/Engineer</Card.Title>
+            <Card.Text>
+              I’m a creative-minded, analytical, and organized software developer with a passion for building software that delivers great UI & UX. My background as a Certified Public Accountant and startup founder displays my abilities in multitasking and researching while operating in a collaborative agile environment with a focus on the company’s profitability.
+      </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <a href="https://github.com/jadekang0611">
+                    <FontAwesomeIcon
+                    icon={['fab', 'github-square']}
+                    className= "font-awesome"
+                    />
+            </a>
+            <a href="https://www.linkedin.com/in/jadekang/">
+              <FontAwesomeIcon
+                icon={['fab', 'linkedin']}
+                className="font-awesome"
+              />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={['fas', 'envelope']}
+                className="font-awesome"
+              />
+            </a>   
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" src="./images/daisy.png" />
+          <Card.Body>
+            <Card.Title>Daisy Yau, Project Manager/Engineer</Card.Title>
+            <Card.Text>
+              My web development passion sparked when I had the opportunity to work with site engineers at my previous position for AdTech Products. I was able to collaborate with numerous engineers to help debug issues on the site and create a better ad UX for users. With my passion to become more technical, it motivated me to become a developer myself. I’m always eager to learn more and help develop a better process, independently and collaboratively.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <a href="https://github.com/daisyy125">
+              <FontAwesomeIcon
+                icon={['fab', 'github-square']}
+                className="font-awesome"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/daisyyau/">
+              <FontAwesomeIcon
+                icon={['fab', 'linkedin']}
+                className="font-awesome"
+              />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={['fas', 'envelope']}
+                className="font-awesome"
+              />
+            </a>  
+          </Card.Footer>
+        </Card>
+      </CardDeck>
+      <CardDeck>
+        <Card>
+          <Card.Img variant="top" src="./images/abdul.png" />
+          <Card.Body>
+            <Card.Title>Abdul James, QA Engineer</Card.Title>
+            <Card.Text>
+              As a new aspiring software engineer, I truly enjoy the challenges of defining and applying analytical thinking in offering solutions, while being committed to remaining proficient to the current technology concepts. I have an appreciation for teamwork, precision execution and integrity and take pride in the art of software craftmanship. My mission and core values lie within ensuring the highest level of service satisfaction for all my clients is achieved.
+      </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <a href="https://github.com/sewatu999/">
+              <FontAwesomeIcon
+                icon={['fab', 'github-square']}
+                className="font-awesome"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/abdul-s-james-031975/">
+              <FontAwesomeIcon
+                icon={['fab', 'linkedin']}
+                className="font-awesome"
+              />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={['fas', 'envelope']}
+                className="font-awesome"
+              />
+            </a>  
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" src="./images/sage.png"  />
+          <Card.Body>
+            <Card.Title>Sage Kearney, UI Engineer</Card.Title>
+            <Card.Text>
+              Visionary full stack software engineer who’s artfully managed to weld her background in graphic design with tech expertise in the form of web development to further fuel her passion for storytelling. Using a client centered approach at the forefront of every project, this self starter engineer is equipped to craft creative solutions for entrepreneurs who are looking to elevate their online user experience and transform what was once a figment of the imagination into a real, tangible product. 
+      </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <a href="https://github.com/Sage-Kearney">
+              <FontAwesomeIcon
+                icon={['fab', 'github-square']}
+                className="font-awesome"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/sage-kearney/">
+              <FontAwesomeIcon
+                icon={['fab', 'linkedin']}
+                className="font-awesome"
+              />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={['fas', 'envelope']}
+                className="font-awesome"
+              />
+            </a>  
+          </Card.Footer>
+        </Card>
+      </CardDeck>
     </div>
   );
 }

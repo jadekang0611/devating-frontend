@@ -12,8 +12,9 @@ import Home from '../Landing/Home';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faMars } from '@fortawesome/free-solid-svg-icons';
-library.add(faMars);
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faMars , faEnvelope } from '@fortawesome/free-solid-svg-icons';
+library.add(faMars, fab, faEnvelope);
 
 function App() {
   return (

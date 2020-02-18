@@ -43,10 +43,10 @@ function SignIn(props) {
     <div className="sign-in-container">
       <img
         className="mb-4"
-        src="https://via.placeholder.com/150"
+        src="./images/logo3.png"
         alt="devating"
-        width="72"
-        height="72"
+        width="150"
+        height="150"
       />
       <h2 className="sign-in-prompt">Please sign in</h2>
       <Form className="sign-in-form">
