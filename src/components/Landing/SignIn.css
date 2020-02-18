@@ -1,5 +1,4 @@
 body {
-  background-image: url('./desktop-background-devating.svg') !important;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -45,4 +44,3 @@ body {
   background-color: transparent !important;
   color: #ffffff !important;
 }
-

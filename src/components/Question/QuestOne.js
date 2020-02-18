@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function QuestOne(props) {
+  console.log("Hit page QuestionOne");
   const [userAge, setUserAge] = useState('');
   const [userGender, setUserGender] = useState('');
   // const [submit, setSubmit] = useState('');

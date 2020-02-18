@@ -1,10 +1,7 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Link, Switch, Route, Router, Redirect } from 'react-router-dom';
-import { browserHistory } from 'react-router';
+import { useState } from 'react';
 import './SignIn.css';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 
 const axios = require('axios');
 
