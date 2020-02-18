@@ -14,6 +14,7 @@ body {
     margin: 0 auto;
     text-align: center;
     /* border: 1px solid white; */
+    flex: 1 0 auto;
 }
 
 .match-info{

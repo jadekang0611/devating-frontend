@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <div>
       <Link to="/results">
-        <h1 className="">Devating</h1>
+        <h1 className="navlogo">Devating</h1>
       </Link>
       <ul>
         <li>

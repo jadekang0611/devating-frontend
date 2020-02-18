@@ -7,6 +7,10 @@ nav {
     /* background-color:#000241; */
 }
 
+.navlogo {
+    display: inline-block;
+}
+
 ul {
     display: inline;
     padding: 0;
