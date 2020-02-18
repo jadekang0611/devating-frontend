@@ -19,8 +19,8 @@ function QuestTwo(props) {
         name: props.location.state.name,
         email: props.location.state.email,
         password: props.location.state.password,
-        age: props.location.state.userAge,
-        gender: props.location.state.userGender,
+        age: props.location.state.age,
+        gender: props.location.state.gender,
         wantGender: wantGender
       }
     });
