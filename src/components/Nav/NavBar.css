@@ -36,3 +36,10 @@ a {
   text-decoration: none !important;
   opacity: 0.6;
 }
+
+.navTitle {
+  color: white;
+  font-size: 2em;
+  display: inline-block;
+  text-align: left;
+}
