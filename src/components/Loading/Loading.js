@@ -1,8 +1,14 @@
 import React from 'react';
+import './loading.css';
 
 function Loading() {
     return (
-        <h3>This is loading component: logo and refactoring results page</h3>
+      <div>
+        <h2>Refactoring your matches</h2>
+        <img
+          src='../icons/mobile-background-devating.svg'
+          alt='refactoring'></img>
+      </div>
     );
 }
 
