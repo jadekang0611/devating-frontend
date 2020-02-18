@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -6,10 +7,12 @@ function QuestTwo(props) {
   const [wantGender, setWantGender] = useState('');
 
   function handleWantGender(e) {
+
     e.preventDefault();
     setWantGender(e.target.value);
     console.log(e.target.value);
   }
+
 
   const handleSubmit = el => {
     el.preventDefault();
@@ -48,6 +51,7 @@ function QuestTwo(props) {
           <p>2 of 4</p>
           <button type="submit">Next</button>
         </div>
+
       </form>
     </div>
   );
