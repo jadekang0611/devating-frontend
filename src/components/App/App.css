@@ -1,13 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
 
+
 body {
-  color: white;
-  /* background-image: url('/Users/sagekearney/sei/projects/project3/devating-frontend/public/images/desktop-background-devating.svg'); */
-  background-color: #000241;
-  font-family: 'Montserrat', sans-serif;
+  background: url('/images/desktop-background-devating.svg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+.content {
+  flex: 1 0 auto;
 }
+
+footer {
+  background:#000241;
+  padding: 1rem;
+  font-family: 'Montserrat' sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  font-size: .7rem;
+  font-weight: 800;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+
+/* sticky footer from css tricks
+HTML
+<body>
+  <div class="content">
+    content
+  </div>
+  <footer class="footer"></footer>
+</body>
+
+CSS
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+*/ 

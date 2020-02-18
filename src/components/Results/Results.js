@@ -1,8 +1,12 @@
 import React from 'react';
+import MatchCard from '../MatchCard/MatchCard';
 
 function Results() {
     return (
-        <h3>This is results component: FIND YOUR MATCH (in h1) and MatchCard.js</h3>
+      <div >
+        <h3>Take a chance on..</h3>
+        <MatchCard />
+      </div>
     );
 }
 
