@@ -1,10 +1,9 @@
-body {
-    background-color:#000241;
-}
-
 nav {
     text-align: right;
-    background-color:#000241;
+}
+
+.navlogo {
+    display: inline-block;
 }
 
 ul {
