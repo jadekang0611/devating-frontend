@@ -10,6 +10,7 @@ function Loading() {
         alt='refactoring'></img>
     </div>
   );
+
 }
 
 export default Loading;
