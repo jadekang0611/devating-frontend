@@ -59,8 +59,6 @@ function QuestThree(props) {
 
   }
 
-  // when icon is clicked (when clicked is true) we want the class name to equal clicked-icon
-  // when the icon is not clicked (when clicked is false) we want the class name to equal question-icon
 
 
   const handleSubmit = el => {
