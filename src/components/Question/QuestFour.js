@@ -93,7 +93,7 @@ function QuestFour(props) {
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">
-            Select some of your favorite activities
+            Select some of your favorite coding languages
           </h2>
           <Row>
             <Col className="codingIcon">

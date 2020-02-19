@@ -1,11 +1,31 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import csharp from '../../icons/csharp.svg';
+import java from '../../icons/java.svg';
+import javascript from '../../icons/javascript.svg';
+import nodeJS from '../../icons/nodeJS.svg';
+import php from '../../icons/php.svg';
+import python from '../../icons/python.svg';
+import react from '../../icons/react.svg';
+import sql from '../../icons/sql.svg';
+import swift from '../../icons/swift.svg';
 
 const axios = require('axios');
+const codingImages = [
+  csharp,
+  java,
+  javascript,
+  nodeJS,
+  php,
+  python,
+  react,
+  sql,
+  swift
+];
 
 function Results(props) {
   const url = 'http://localhost:7000/match/';
-  const email = 'sharline@email.com';
+  const email = 'jadekang@gmail.com';
   // const email = props.location.state.email;
 
   const [matches, setMatch] = useState([]);
@@ -43,13 +63,13 @@ return (
         <p>Both you and {matches[matchNum].name} like these languages..</p>
       </div>
       <div className="icon-container">
-        {matches[matchNum].favoriteCoding.map(code => {
-          return (
-            <div className = "code-lang-icon">
-              <img src={code.image}></img>
-            </div>
-          );
-        })}
+      {matches[matchNum].favoriteCoding.map(code => {
+            return (
+              <div className="code-lang-icon">
+                <img src={codingImages[code.id]}></img>
+              </div>
+            );
+          })}
         </div>
       </div>
       <button onClick={onClick} className="match-button">
@@ -71,13 +91,13 @@ return (
             <p>Both you and {matches[matchNum].name} like these languages..</p>
           </div>
           <div className="icon-container">
-            {matches[matchNum].favoriteCoding.map(code => {
-              return (
-                <div className = "code-lang-icon">
-                  <img src={code.image}></img>
-                </div>
-              );
-            })}
+          {matches[matchNum].favoriteCoding.map(code => {
+            return (
+              <div className="code-lang-icon">
+                <img src={codingImages[code.id]}></img>
+              </div>
+            );
+          })}
             </div>
           </div>
           <button onClick={onClick} className="match-button">
