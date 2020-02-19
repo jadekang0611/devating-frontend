@@ -73,7 +73,7 @@ function QuestOne(props) {
                 height="110"
                 alt="submit"
                 value="Female"
-                className="question-icon"
+                className="question-icon gender-icon"
                 onClick={handleGender}
               />
             </Col>
@@ -85,7 +85,7 @@ function QuestOne(props) {
                 height="110"
                 alt="submit"
                 value="Male"
-                className="question-icon"
+                className="question-icon gender-icon"
                 onClick={handleGender}
               />
             </Col>

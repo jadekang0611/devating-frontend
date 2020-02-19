@@ -44,7 +44,7 @@ function QuestTwo(props) {
                 height="110"
                 alt="submit"
                 value="Female"
-                className="question-icon"
+                className="question-icon gender-icon"
                 onClick={handleWantGender}
               />
             </Col>
@@ -56,7 +56,7 @@ function QuestTwo(props) {
                 height="110"
                 alt="submit"
                 value="Male"
-                className="question-icon"
+                className="question-icon gender-icon"
                 onClick={handleWantGender}
               />
             </Col>

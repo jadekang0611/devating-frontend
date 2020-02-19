@@ -2,7 +2,25 @@ import React from 'react';
 import './MatchCard.css';
 import { useState, useEffect } from 'react';
 
-function MatchCard() {
+const axios = require('axios');
+
+function MatchCard(props) {
+  const url = 'http://localhost:7000/match/';
+  const email = 'sharline@email.com';
+  const dynamicEmail = props.location.state.email;
+  const matches = props.matches;
+
+  const [match, setMatch] = useState([]);
+
+  useEffect(() => {
+    axios.get(url + email).then(res =>
+      setMatch(res.data))
+  }, []);
+
+ console.log(match)
+
+//  const data = match;
+ 
   const [imgs, setImgs] = useState([
     {
       img:
