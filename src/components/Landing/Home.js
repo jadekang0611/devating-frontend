@@ -9,20 +9,19 @@ function Home() {
     <>
       <Container>
         <Row>
-          <Col>
-            <h2 className="landing-content">
-              Sint adipisicing magna amet minim magna et pariatur officia id
-              Lorem velit. Qui do est adipisicing laborum irure deserunt
-              incididunt.
-            </h2>
+          <Col className="Home-Logo">
+            <img
+              src="./images/devating-landing-logo.svg"
+              className="landing-content"
+            ></img>
           </Col>
         </Row>
       </Container>
       <Container className="landing-button-container text-center">
         <Row>
           <Col>
-            <button className="create-button-landing ">
-              <Link to="/createAccount">Create a new account</Link>
+            <button className="create-button-landing">
+              <Link to="/createAccount">Create account</Link>
             </button>
           </Col>
         </Row>
