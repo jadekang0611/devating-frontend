@@ -1,6 +1,7 @@
 import React from 'react';
 import './MatchCard.css';
 import { useState, useEffect } from 'react';
+import cooking from '../../icons/cooking.svg';
 
 const axios = require('axios');
 
@@ -13,14 +14,13 @@ function MatchCard(props) {
   const [match, setMatch] = useState([]);
 
   useEffect(() => {
-    axios.get(url + email).then(res =>
-      setMatch(res.data))
+    axios.get(url + email).then(res => setMatch(res.data));
   }, []);
 
- console.log(match)
+  console.log(match);
 
-//  const data = match;
- 
+  //  const data = match;
+
   const [imgs, setImgs] = useState([
     {
       img:
@@ -62,9 +62,15 @@ function MatchCard(props) {
           <p>Both you and 'match name' like these languages..</p>
         </div>
         <div className="icon-container">
-          <div className="code-lang-icon">icon</div>
-          <div className="code-lang-icon">icon</div>
-          <div className="code-lang-icon">icon</div>
+          <div className="code-lang-icon">
+            <img src={cooking}></img>
+          </div>
+          <div className="code-lang-icon">
+            <img src={cooking}></img>
+          </div>
+          <div className="code-lang-icon">
+            <img src={cooking}></img>
+          </div>
         </div>
         <button onClick={onClick} className="match-button">
           keep

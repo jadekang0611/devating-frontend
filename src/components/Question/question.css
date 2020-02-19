@@ -73,27 +73,33 @@
   transition-duration: 0.4s;
 }
 
-
 .question-icon:hover {
-  border: 1px solid #ffffff;
+  /* border: 1px solid #ffffff; */
   padding: 16px;
 }
 
 /* new class name for styling on a clicked icon */
 .clicked-icon {
-  background-color: gray;
+  border-radius: 15px;
+  background-color: #730042;
   padding: 16px;
   outline: none;
-  opacity: 0.4;
+  opacity: 0.3;
   border: 1px solid #ffffff;
 }
 
 .question-icon:focus {
-  background-color: gray;
+  /* background-color: gray;
   padding: 16px;
   outline: none;
   opacity: 0.4;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff; */
+  border-radius: 15px;
+  background-color: #730042;
+  padding: 16px;
+  outline: none;
+  opacity: 0.3;
+  border: 1px solid #730042;
 }
 
 .next-button:hover {
@@ -127,8 +133,8 @@
   margin-top: 56px;
 }
 
-@media screen and (max-width: 576px){
-.gender-icon {
-  width: 5rem;
-}
+@media screen and (max-width: 576px) {
+  .gender-icon {
+    width: 5rem;
+  }
 }
