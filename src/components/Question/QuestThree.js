@@ -16,9 +16,13 @@ function QuestThree(props) {
   //const [favActivities, setFavActivities] = useState([]);
   let favActivities = [];
   let activities = [];
-  let clickedArr = [];
   
-  const [clicked, changeClicked] = useState(false);
+  const [cookingClicked, changeCookingClicked] = useState(false);
+  const [gamingClicked, changeGamingClicked] = useState(false);
+  const [skiingClicked, changeSkiingClicked] = useState(false);
+  const [travelingClicked, changeTravelingClicked] = useState(false);
+  const [trekkingClicked, changeTrekkingClicked] = useState(false);
+  const [runningClicked, changeRunningClicked] = useState(false);
 
   function handleToggle(e) {
     e.preventDefault();
@@ -47,17 +51,25 @@ function QuestThree(props) {
     // TODO: add code to toggle image class on/off
     console.log('fav ' + favActivities);
 
-    changeClicked(true);
-    clickedArr.push(e);
-    reset();
+    if(e.target.value === 1){
+      changeCookingClicked(true);
+    } else if (e.target.value === 2){
+      changeGamingClicked(true);
+    } else if (e.target.value === 3) {
+      changeSkiingClicked(true);
+    }
+
+    // reset();
   }
 
-  let inputClass = clicked ? "clicked-icon" : "question-icon";
+  let inputClassCooking = cookingClicked ? "clicked-icon" : "question-icon";
+  let inputClassGaming = gamingClicked ? "clicked-icon" : "question-icon";
+  let inputClassSkiing = skiingClicked ? "clicked-icon" : "question-icon";
 
-  function reset(){
-    // if the value of the icon doesn't match the value of the clicked icon(e),
+  // function reset(){
+  //   // if the value of the icon doesn't match the value of the clicked icon(e),
 
-  }
+  // }
 
 
 
@@ -100,7 +112,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="1"
-                className={inputClass}
+                className={inputClassCooking}
                 onClick={handleToggle}
               />
             </Col>
@@ -112,7 +124,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="2"
-                className={inputClass}
+                className={inputClassGaming}
                 onClick={handleToggle}
               />
             </Col>
@@ -124,7 +136,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="3"
-                className={inputClass}
+                className={inputClassSkiing}
                 onClick={handleToggle}
               />
             </Col>
@@ -138,7 +150,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="4"
-                className={inputClass}
+                // className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
@@ -150,7 +162,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="5"
-                className={inputClass}
+                // className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
@@ -162,7 +174,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="6"
-                className={inputClass}
+                // className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
