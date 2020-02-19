@@ -76,7 +76,7 @@ function QuestFour(props) {
       .catch(console.error);
 
     props.history.push({
-      pathname: '/loading',
+      pathname: '/results',
       state: {
         name: props.location.state.name,
         email: props.location.state.email,
@@ -210,9 +210,11 @@ function QuestFour(props) {
             </Col>
           </Row>
           <div>
+            <Link to= "/loading">
             <button type="submit" className="next-button">
               Sign Up
             </button>
+            </Link>
           </div>
         </Container>
       </form>
