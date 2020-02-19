@@ -26,7 +26,15 @@ function QuestThree(props) {
 
   function handleToggle(e) {
     e.preventDefault();
+    console.log(e.target);
 
+    e.target.style.backgroundColor = "gray";
+    e.target.style.padding = "16px";
+    e.target.style.outline = "none";
+    e.target.style.opacity = "0.4";
+    e.target.style.border = "1px solid #ffffff";
+    
+    
     // let obj = {
     //   id: e.target.value
     // };
@@ -51,13 +59,13 @@ function QuestThree(props) {
     // TODO: add code to toggle image class on/off
     console.log('fav ' + favActivities);
 
-    if(e.target.value === 1){
-      changeCookingClicked(true);
-    } else if (e.target.value === 2){
-      changeGamingClicked(true);
-    } else if (e.target.value === 3) {
-      changeSkiingClicked(true);
-    }
+    // if(e.target.value === 1){
+    //   changeCookingClicked(true);
+    // } else if (e.target.value === 2){
+    //   changeGamingClicked(true);
+    // } else if (e.target.value === 3) {
+    //   changeSkiingClicked(true);
+    // }
 
     // reset();
   }
