@@ -28,8 +28,8 @@ function App() {
             <Route path="/createAccount" component={CreateAccount} />
             <Route exact path="/about" component={About} />
             <Route exact path="/dashboard" component={Dashboard} />
-            <Route exact path="/loading" component={Loading} />
             <Route path="/question" component={Question} />
+            <Route exact path="/loading" component={Loading} />
             <Route exact path="/results" component={Results} />
           </Switch>
         </main>

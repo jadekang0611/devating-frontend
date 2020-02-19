@@ -76,7 +76,7 @@ function QuestFour(props) {
       .catch(console.error);
 
     props.history.push({
-      pathname: '/results',
+      pathname: '/loading',
       state: {
         name: props.location.state.name,
         email: props.location.state.email,
