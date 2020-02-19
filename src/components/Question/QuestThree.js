@@ -16,6 +16,10 @@ function QuestThree(props) {
   //const [favActivities, setFavActivities] = useState([]);
   let favActivities = [];
   let activities = [];
+  let clickedArr = [];
+  
+  const [clicked, changeClicked] = useState(false);
+
   function handleToggle(e) {
     e.preventDefault();
 
@@ -42,7 +46,22 @@ function QuestThree(props) {
     favActivities = arr;
     // TODO: add code to toggle image class on/off
     console.log('fav ' + favActivities);
+
+    changeClicked(true);
+    clickedArr.push(e);
+    reset();
   }
+
+  let inputClass = clicked ? "clicked-icon" : "question-icon";
+
+  function reset(){
+    // if the value of the icon doesn't match the value of the clicked icon(e),
+
+  }
+
+  // when icon is clicked (when clicked is true) we want the class name to equal clicked-icon
+  // when the icon is not clicked (when clicked is false) we want the class name to equal question-icon
+
 
   const handleSubmit = el => {
     el.preventDefault();
@@ -83,7 +102,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="1"
-                className="question-icon"
+                className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
@@ -95,7 +114,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="2"
-                className="question-icon"
+                className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
@@ -107,7 +126,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="3"
-                className="question-icon"
+                className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
@@ -121,7 +140,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="4"
-                className="question-icon"
+                className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
@@ -133,7 +152,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="5"
-                className="question-icon"
+                className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
@@ -145,7 +164,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="6"
-                className="question-icon"
+                className={inputClass}
                 onClick={handleToggle}
               />
             </Col>
