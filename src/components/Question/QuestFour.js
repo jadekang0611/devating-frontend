@@ -23,6 +23,12 @@ function QuestFour(props) {
   function handleToggle(e) {
     e.preventDefault();
 
+    e.target.style.backgroundColor = "gray";
+    e.target.style.padding = "16px";
+    e.target.style.outline = "none";
+    e.target.style.opacity = "0.4";
+    e.target.style.border = "1px solid #ffffff";
+
     let arr = favCoding;
     if (arr.includes(e.target.value)) {
       let index = arr.indexOf(e.target.value);
