@@ -37,7 +37,7 @@ function QuestTwo(props) {
         <Container>
           <h2 className="question-prompt">Select a gender of your interest</h2>
           <Row>
-            <Col>
+            <Col className="gender-icon">
               <input
                 type="image"
                 src={femaleIcon}
@@ -45,7 +45,7 @@ function QuestTwo(props) {
                 height="110"
                 alt="submit"
                 value="Female"
-                className="question-icon gender-icon"
+                className="question-icon"
                 onClick={handleWantGender}
               />
             </Col>
@@ -57,7 +57,7 @@ function QuestTwo(props) {
                 height="110"
                 alt="submit"
                 value="Male"
-                className="question-icon gender-icon"
+                className="question-icon"
                 onClick={handleWantGender}
               />
             </Col>

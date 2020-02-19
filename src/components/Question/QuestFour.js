@@ -96,7 +96,7 @@ function QuestFour(props) {
             Select some of your favorite activities
           </h2>
           <Row>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={csharp}
@@ -108,7 +108,7 @@ function QuestFour(props) {
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={java}
@@ -120,7 +120,7 @@ function QuestFour(props) {
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={javascript}
@@ -134,7 +134,7 @@ function QuestFour(props) {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={nodeJS}
@@ -146,7 +146,7 @@ function QuestFour(props) {
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={php}
@@ -158,7 +158,7 @@ function QuestFour(props) {
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={python}
@@ -172,7 +172,7 @@ function QuestFour(props) {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={react}
@@ -184,7 +184,7 @@ function QuestFour(props) {
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={sql}
@@ -196,7 +196,7 @@ function QuestFour(props) {
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="codingIcon">
               <input
                 type="image"
                 src={swift}

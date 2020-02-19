@@ -135,6 +135,16 @@
 
 @media screen and (max-width: 576px) {
   .gender-icon {
+    text-align: center;
     width: 5rem;
+  }
+
+  .question-icon {
+    margin: 2rem auto !important;
+    width: 5rem !important;
+  }
+
+  .activitiesIcon, .codingIcon {
+    text-align: center;
   }
 }

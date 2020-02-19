@@ -72,6 +72,9 @@ function QuestThree(props) {
   let inputClassCooking = cookingClicked ? 'clicked-icon' : 'question-icon';
   let inputClassGaming = gamingClicked ? 'clicked-icon' : 'question-icon';
   let inputClassSkiing = skiingClicked ? 'clicked-icon' : 'question-icon';
+  let inputClassTraveling = travelingClicked ? 'clicked-icon' : 'question-icon';
+  let inputClassTrekking = trekkingClicked ? 'clicked-icon' : 'question-icon';
+  let inputClassRunning = runningClicked ? 'clicked-icon' : 'question-icon';
 
   // function reset(){
   //   // if the value of the icon doesn't match the value of the clicked icon(e),
@@ -109,7 +112,7 @@ function QuestThree(props) {
             Select some of your favorite activities
           </h2>
           <Row>
-            <Col>
+            <Col className="activitiesIcon">
               <input
                 type="image"
                 src={cooking}
@@ -121,7 +124,7 @@ function QuestThree(props) {
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="activitiesIcon">
               <input
                 type="image"
                 src={gaming}
@@ -133,7 +136,7 @@ function QuestThree(props) {
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="activitiesIcon">
               <input
                 type="image"
                 src={skiing}
@@ -147,7 +150,7 @@ function QuestThree(props) {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col className="activitiesIcon">
               <input
                 type="image"
                 src={traveling}
@@ -155,11 +158,11 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="4"
-                // className={inputClass}
+                className={inputClassTraveling}
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="activitiesIcon">
               <input
                 type="image"
                 src={trekking}
@@ -167,11 +170,11 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="5"
-                // className={inputClass}
+                className={inputClassTrekking}
                 onClick={handleToggle}
               />
             </Col>
-            <Col>
+            <Col className="activitiesIcon">
               <input
                 type="image"
                 src={running}
@@ -179,7 +182,7 @@ function QuestThree(props) {
                 width="100"
                 height="auto"
                 value="6"
-                // className={inputClass}
+                className={inputClassRunning}
                 onClick={handleToggle}
               />
             </Col>

@@ -38,7 +38,7 @@ function Dashboard(props) {
 
   if (user.length > 0) {
     console.log(user[0].keep);
-    console.log(user[0].keep[0].name);
+    // console.log(user[0].keep[0].name);
     return (
       <div>
         <button
