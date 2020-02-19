@@ -26,7 +26,8 @@ function Dashboard(props) {
   //return <Redirect to="/signin" />;
   //}
   const url = 'http://localhost:7000/match/get/';
-  const email = 'jadekang@gmail.com';
+  const updateUrl = 'http://localhost:7000/match/';
+  const email = 'sharline@email.com';
   const updateNameUrl = 'http://localhost:7000/' + email;
   const activityImages = [
     cooking,
@@ -51,6 +52,7 @@ function Dashboard(props) {
   const [user, setUser] = useState([]);
   const [input, setInput] = useState(false);
   const [newName, setNewName] = useState('');
+  const [updatekeepArray, setUpdateKeepArray] = useState([]);
 
   useEffect(() => {
     axios.get(url + email).then(res => setUser(res.data));
@@ -69,6 +71,11 @@ function Dashboard(props) {
     axios.delete(updateNameUrl).then(() => {
       return (window.location.href = '/');
     });
+  };
+
+  const onRemove = e => {
+    setUpdateKeepArray(user[0].keep.splice(e.target.value, 1));
+    axios.put(updateUrl + 'update/' + email, { keep: user[0].keep });
   };
 
   if (user.length > 0) {
@@ -129,9 +136,9 @@ function Dashboard(props) {
           return (
             <div>
               <img src={matchUser.image} alt={matchUser.name} />
-              {/* <button value={i} onClick={removeKeepUser}>
+              <button value={i} onClick={onRemove}>
                 Delete
-              </button> */}
+              </button>
             </div>
           );
         })}
