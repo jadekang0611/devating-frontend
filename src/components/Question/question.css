@@ -133,6 +133,22 @@
   margin-top: 56px;
 }
 
+@media screen and (max-width: 960px) {
+  .gender-icon {
+    text-align: center;
+    width: 5rem;
+  }
+
+  .question-icon {
+    margin: 3rem auto !important;
+    width: 5rem !important;
+  }
+
+  .activitiesIcon, .codingIcon {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .gender-icon {
     text-align: center;

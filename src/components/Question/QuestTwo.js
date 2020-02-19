@@ -49,7 +49,7 @@ function QuestTwo(props) {
                 onClick={handleWantGender}
               />
             </Col>
-            <Col>
+            <Col className="gender-icon">
               <input
                 type="image"
                 src={maleIcon}

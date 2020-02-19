@@ -65,7 +65,7 @@ function QuestOne(props) {
           <div className="separate-div"></div>
           <h2 className="question-prompt">Select your gender</h2>
           <Row>
-            <Col>
+            <Col className="gender-icon">
               <input
                 type="image"
                 src={femaleIcon}
@@ -77,7 +77,7 @@ function QuestOne(props) {
                 onClick={handleGender}
               />
             </Col>
-            <Col>
+            <Col className="gender-icon">
               <input
                 type="image"
                 src={maleIcon}
