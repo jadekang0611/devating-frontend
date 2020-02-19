@@ -72,21 +72,41 @@ function QuestFour(props) {
     setUserData(newUser);
     axios
       .post(url, newUser)
-      .then(res => {})
+      .then(res => {
+        let user = res.data;
+        console.log(user);
+        if (user.length !== 0) {
+          props.history.push({
+            pathname: '/results',
+            state: {
+              name: props.location.state.name,
+              email: props.location.state.email,
+              age: props.location.state.age,
+              gender: props.location.state.gender,
+              genderInterest: props.location.state.wantGender,
+              favoriteActivities: props.location.state.activities,
+              favoriteCoding: coding,
+              user: user
+            }
+          });
+        } else {
+          alert('SOMETHING WENT WRONG');
+        }
+      })
       .catch(console.error);
 
-    props.history.push({
-      pathname: '/results',
-      state: {
-        name: props.location.state.name,
-        email: props.location.state.email,
-        age: props.location.state.age,
-        gender: props.location.state.gender,
-        genderInterest: props.location.state.wantGender,
-        favoriteActivities: props.location.state.activities,
-        favoriteCoding: coding
-      }
-    });
+    // props.history.push({
+    //   pathname: '/results',
+    //   state: {
+    //     name: props.location.state.name,
+    //     email: props.location.state.email,
+    //     age: props.location.state.age,
+    //     gender: props.location.state.gender,
+    //     genderInterest: props.location.state.wantGender,
+    //     favoriteActivities: props.location.state.activities,
+    //     favoriteCoding: coding
+    //   }
+    // });
   };
   return (
     <div className="question-container">

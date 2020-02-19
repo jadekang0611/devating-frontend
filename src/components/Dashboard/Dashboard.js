@@ -21,13 +21,9 @@ import running from '../../icons/running.svg';
 const axios = require('axios');
 
 function Dashboard(props) {
-  //console.log("logged in: " + JSON.stringify(props.location.state.user));
-  //if (props.auth !== true) {
-  //return <Redirect to="/signin" />;
-  //}
   const url = 'http://localhost:7000/match/get/';
   const updateUrl = 'http://localhost:7000/match/';
-  const email = 'sharline@email.com';
+  const email = props.location.state.email;
   const updateNameUrl = 'http://localhost:7000/' + email;
   const activityImages = [
     cooking,
