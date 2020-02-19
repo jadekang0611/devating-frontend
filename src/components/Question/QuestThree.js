@@ -7,7 +7,7 @@ import skiing from '../../icons/skiing.svg';
 import traveling from '../../icons/traveling.svg';
 import trekking from '../../icons/trekking.svg';
 import running from '../../icons/running.svg';
-import './Question.css';
+import './question.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -16,7 +16,7 @@ function QuestThree(props) {
   //const [favActivities, setFavActivities] = useState([]);
   let favActivities = [];
   let activities = [];
-  
+
   const [cookingClicked, changeCookingClicked] = useState(false);
   const [gamingClicked, changeGamingClicked] = useState(false);
   const [skiingClicked, changeSkiingClicked] = useState(false);
@@ -28,13 +28,12 @@ function QuestThree(props) {
     e.preventDefault();
     console.log(e.target);
 
-    e.target.style.backgroundColor = "gray";
-    e.target.style.padding = "16px";
-    e.target.style.outline = "none";
-    e.target.style.opacity = "0.4";
-    e.target.style.border = "1px solid #ffffff";
-    
-    
+    e.target.style.backgroundColor = 'gray';
+    e.target.style.padding = '16px';
+    e.target.style.outline = 'none';
+    e.target.style.opacity = '0.4';
+    e.target.style.border = '1px solid #ffffff';
+
     // let obj = {
     //   id: e.target.value
     // };
@@ -70,16 +69,14 @@ function QuestThree(props) {
     // reset();
   }
 
-  let inputClassCooking = cookingClicked ? "clicked-icon" : "question-icon";
-  let inputClassGaming = gamingClicked ? "clicked-icon" : "question-icon";
-  let inputClassSkiing = skiingClicked ? "clicked-icon" : "question-icon";
+  let inputClassCooking = cookingClicked ? 'clicked-icon' : 'question-icon';
+  let inputClassGaming = gamingClicked ? 'clicked-icon' : 'question-icon';
+  let inputClassSkiing = skiingClicked ? 'clicked-icon' : 'question-icon';
 
   // function reset(){
   //   // if the value of the icon doesn't match the value of the clicked icon(e),
 
   // }
-
-
 
   const handleSubmit = el => {
     el.preventDefault();

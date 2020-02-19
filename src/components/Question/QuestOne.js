@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import maleIcon from '../../icons/male.svg';
 import femaleIcon from '../../icons/female.svg';
-import './Question.css';
+import './question.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

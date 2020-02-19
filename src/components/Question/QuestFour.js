@@ -11,7 +11,7 @@ import python from '../../icons/python.svg';
 import react from '../../icons/react.svg';
 import sql from '../../icons/sql.svg';
 import swift from '../../icons/swift.svg';
-import './Question.css';
+import './question.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -23,11 +23,11 @@ function QuestFour(props) {
   function handleToggle(e) {
     e.preventDefault();
 
-    e.target.style.backgroundColor = "gray";
-    e.target.style.padding = "16px";
-    e.target.style.outline = "none";
-    e.target.style.opacity = "0.4";
-    e.target.style.border = "1px solid #ffffff";
+    e.target.style.backgroundColor = 'gray';
+    e.target.style.padding = '16px';
+    e.target.style.outline = 'none';
+    e.target.style.opacity = '0.4';
+    e.target.style.border = '1px solid #ffffff';
 
     let arr = favCoding;
     if (arr.includes(e.target.value)) {

@@ -3,7 +3,7 @@ import QuestOne from './QuestOne';
 import QuestTwo from './QuestTwo';
 import QuestThree from './QuestThree';
 import QuestFour from './QuestFour';
-import './Question.css';
+import './question.css';
 
 import { Switch, Route, Router, Redirect } from 'react-router-dom';
 

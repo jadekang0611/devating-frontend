@@ -30,7 +30,7 @@ function App() {
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/loading" component={Loading} />
             <Route path="/question" component={Question} />
-            <Route exact path="/results" component={MatchCard} />
+            <Route exact path="/results" component={Results} />
           </Switch>
         </main>
       </div>
