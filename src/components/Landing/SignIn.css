@@ -37,11 +37,11 @@ body {
   transition-duration: 0.4s;
 }
 
-.sign-in-button:hover {
+/* .sign-in-button:hover {
   border: 1px solid #ffffff;
   background-color: transparent;
   color: white;
-}
+} */
 
 .sign-in-button:focus {
   width: 100%;

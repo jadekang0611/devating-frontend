@@ -8,7 +8,15 @@ import logo from '../../devating-logo.png';
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg">
-      <h1 className="navTitle">Devating</h1>
+      <h1 className="navTitle">
+        {/* <img
+          className="mb-4"
+          src="./images/logo3.png"
+          alt="devating"
+          width="70"
+          height="70"
+        /> */}
+      </h1>
       <Navbar.Toggle
         aria-controls="responsive-navbar-nav"
         className="navbar-toggler-right"
