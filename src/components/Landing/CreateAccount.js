@@ -2,6 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import './CreateAccount.css';
 import Form from 'react-bootstrap/Form';
+import request from 'superagent';
+
+const axios = require('axios');
 
 function CreateAccount(props) {
   const [name, setName] = useState('');
@@ -16,6 +19,27 @@ function CreateAccount(props) {
     });
   };
 
+  // const [addPhoto, setAddPhoto] = useState();
+
+  // const CLOUDINARY_UPLOAD_PRESET = 'pc6vexst';
+  // const CLOUDINARY_UPLOAD_URL =
+  //   'https://api.cloudinary.com/v1_1/your_cloudinary_app_name/devating/upload';
+
+  // const [imageURL, setImageURL] = useState();
+
+  // const fileChangedHandler = e => {
+  //   setAddPhoto(e.target.files[0]);
+  // };
+  // const uploadHandler = file => {
+  //   axios
+  //     .post(
+  //       'https://www.filestackapi.com/api/store/S3?key=AtohbgnYPRzSkH1dv3i7Hz',
+  //       { fileUpload: file }
+  //     )
+  //     .then(res => console.log(res.data))
+  //     .then(axios.get('https://cdn.filestackcontent.com/dzNWgTqaStOrGyvaTosP'));
+  // };
+
   return (
     <div className="sign-up-container">
       <img
@@ -26,6 +50,8 @@ function CreateAccount(props) {
         height="150"
       />
       <h2 className="sign-up-prompt">Create a new account</h2>
+      {/* <input type="file" onChange={fileChangedHandler} />
+      <button onClick={uploadHandler}>Upload your image</button> */}
       <Form className="sign-up-form " onSubmit={handleSubmit}>
         <Form.Group className="input-field">
           <Form.Control
