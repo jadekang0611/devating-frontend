@@ -25,13 +25,13 @@ function NavBar() {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Link className="nav-item">
-            <Link to="/about" className="items">
-              About
+            <Link to="/" className="items">
+              Home
             </Link>
           </Nav.Link>
           <Nav.Link className="nav-item">
-            <Link to="/dashboard" className="items">
-              Matches
+            <Link to="/about" className="items">
+              About
             </Link>
           </Nav.Link>
           <Nav.Link className="nav-item">
