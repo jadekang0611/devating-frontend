@@ -44,54 +44,54 @@ function QuestOne(props) {
   };
 
   return (
-    <div className='question-container'>
+    <div className="question-container">
       <Form onSubmit={handleSubmit}>
         <Container>
-          <h2 className='question-prompt'>Tell us your age</h2>
+          <h2 className="question-prompt">Tell us your age</h2>
           <Row>
             <Col>
-              <Form.Group className='input-field'>
+              <Form.Group className="input-field">
                 <Form.Control
-                  type='text'
-                  placeholder='Age'
-                  id='age'
+                  type="text"
+                  placeholder="Age"
+                  id="age"
                   value={userAge}
                   onChange={handleAgeChange}
-                  className='question-input'
+                  className="question-input"
                 />
               </Form.Group>
             </Col>
           </Row>
-          <div className='separate-div'></div>
-          <h2 className='question-prompt'>Select your gender</h2>
+          <div className="separate-div"></div>
+          <h2 className="question-prompt">Select your gender</h2>
           <Row>
-            <Col className='gender-icon'>
+            <Col className="gender-icon">
               <input
-                type='image'
+                type="image"
                 src={femaleIcon}
-                width='110'
-                height='110'
-                alt='submit'
-                value='Female'
-                className='question-icon gender-icon'
+                width="110"
+                height="110"
+                alt="submit"
+                value="Female"
+                className="question-icon gender-icon"
                 onClick={handleGender}
               />
             </Col>
-            <Col className='gender-icon'>
+            <Col className="gender-icon">
               <input
-                type='image'
+                type="image"
                 src={maleIcon}
-                width='110'
-                height='110'
-                alt='submit'
-                value='Male'
-                className='question-icon gender-icon'
+                width="110"
+                height="110"
+                alt="submit"
+                value="Male"
+                className="question-icon gender-icon"
                 onClick={handleGender}
               />
             </Col>
           </Row>
-          <div className='question-card-bottom'>
-            <button type='submit' className='next-button'>
+          <div className="question-card-bottom">
+            <button type="submit" className="next-button">
               Next
             </button>
           </div>

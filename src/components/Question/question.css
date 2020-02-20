@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
-
 .question-container {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 72px;
-  /* margin-bottom: 200px; */
 }
 
 .question-prompt {
@@ -69,6 +65,7 @@
 .next-button {
   width: 100%;
   height: 3.5rem;
+  margin-bottom: 64px;
   border-radius: 40px;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
@@ -98,23 +95,18 @@
 .clicked-icon {
   border-radius: 15px;
   background-color: #730042;
-  padding: 16px;
+  padding: 10px;
   outline: none;
-  opacity: 0.3;
+  opacity: 0.5;
   border: 1px solid #ffffff;
 }
 
 .question-icon:focus {
-  /* background-color: gray;
-  padding: 16px;
-  outline: none;
-  opacity: 0.4;
-  border: 1px solid #ffffff; */
   border-radius: 15px;
   background-color: #730042;
-  padding: 16px;
+  padding: 10px;
   outline: none;
-  opacity: 0.3;
+  opacity: 0.5;
   border: 1px solid #730042;
 }
 
@@ -158,7 +150,8 @@
     width: 5rem !important;
   }
 
-  .activitiesIcon, .codingIcon {
+  .activitiesIcon,
+  .codingIcon {
     text-align: center;
   }
 }
@@ -174,7 +167,8 @@
     width: 5rem !important;
   }
 
-  .activitiesIcon, .codingIcon {
+  .activitiesIcon,
+  .codingIcon {
     text-align: center;
   }
 }

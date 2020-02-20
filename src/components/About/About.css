@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
-
 body {
   background: url('/images/desktop-background-devating.svg') no-repeat center
     center fixed;
@@ -14,29 +12,28 @@ body {
   align-items: center; */
   margin: 0 auto;
   background: none !important;
-  
 }
 
 .font-awesome {
-  color:#000241;
+  color: #000241;
   font-size: 1.5rem;
   margin: 0 1rem;
 }
 
 .about-container {
-  padding: 5rem 15rem;
+  padding: 5rem 2rem;
+  font-family: 'Montserrat Alternates', sans-serif;
   /* color: white; */
 }
 
-h2, section {
+h2,
+section {
   color: white;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .card {
   margin: 2rem;
 }
-
 
 h2 {
   font-weight: 800 !important;
@@ -51,5 +48,10 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3rem;
   border: 0;
-  border-top: .5px solid white !important;
+  border-top: 0.5px solid white !important;
+}
+
+.bio-title {
+  font-size: 24px;
+  font-weight: 600;
 }

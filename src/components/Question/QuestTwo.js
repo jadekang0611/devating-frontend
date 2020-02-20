@@ -32,38 +32,38 @@ function QuestTwo(props) {
   };
 
   return (
-    <div className='question-container'>
+    <div className="question-container">
       <form onSubmit={handleSubmit}>
         <Container>
-          <h2 className='question-prompt'>Select a gender of your interest</h2>
+          <h2 className="question-prompt">Select a gender of your interest</h2>
           <Row>
-            <Col className='gender-icon'>
+            <Col className="gender-icon">
               <input
-                type='image'
+                type="image"
                 src={femaleIcon}
-                width='110'
-                height='110'
-                alt='submit'
-                value='Female'
-                className='question-icon'
+                width="110"
+                height="110"
+                alt="submit"
+                value="Female"
+                className="question-icon"
                 onClick={handleWantGender}
               />
             </Col>
-            <Col className='gender-icon'>
+            <Col className="gender-icon">
               <input
-                type='image'
+                type="image"
                 src={maleIcon}
-                width='110'
-                height='110'
-                alt='submit'
-                value='Male'
-                className='question-icon'
+                width="110"
+                height="110"
+                alt="submit"
+                value="Male"
+                className="question-icon"
                 onClick={handleWantGender}
               />
             </Col>
           </Row>
-          <div className='question-card-bottom'>
-            <button type='submit' className='next-button'>
+          <div className="question-card-bottom">
+            <button type="submit" className="next-button">
               Next
             </button>
           </div>

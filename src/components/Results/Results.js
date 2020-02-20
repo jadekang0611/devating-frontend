@@ -1,5 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import './Results.css';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 const axios = require('axios');
 
@@ -55,7 +58,7 @@ function Results(props) {
       state: {
         email: email
       }
-    })
+    });
   };
 
   const onClick = () => {
@@ -78,7 +81,7 @@ function Results(props) {
     if (matchNum === matches.length - 1) {
       return (
         <div>
-          <h3>Take a chance on..</h3>
+          <h2 className="result-question">Take a chance on..</h2>
           <div className="card-container">
             <div>
               <img src={matches[matchNum].image} alt="flower"></img>
@@ -111,36 +114,59 @@ function Results(props) {
       );
     } else {
       return (
-        <div>
-          <h3>Take a chance on..</h3>
-          <div className="card-container">
-            <div>
-              <img src={matches[matchNum].image} alt="flower"></img>
-              <div className="match-info">
-                <h3 className="match-name-age">
-                  {matches[matchNum].name}, {matches[matchNum].age}
-                </h3>
-                <p>
-                  Both you and {matches[matchNum].name} like these languages..
-                </p>
-              </div>
-              <div className="icon-container">
-                {matches[matchNum].favoriteCoding.map(code => {
-                  return (
-                    <div className="code-lang-icon">
-                      <img src={code.image}></img>
-                    </div>
-                  );
-                })}
+        <div className="match-container-parent">
+          <h3 className="result-question">Take a chance on..</h3>
+
+          <Card style={{ width: '24rem' }} className="card-container">
+            <div className="image-container">
+              <Card.Img
+                variant="top"
+                className="profile-picture"
+                src={matches[matchNum].image}
+                alt={matches[matchNum].name}
+              />
+              <div className="overlay" />
+              <div className="profile-button-container">
+                <button
+                  type="button"
+                  onClick={onClick}
+                  className="match-button1"
+                >
+                  keep
+                </button>{' '}
+                {''}
+                <button
+                  type="button"
+                  onClick={mehClick}
+                  className="match-button2"
+                >
+                  meh
+                </button>
               </div>
             </div>
-            <button onClick={onClick} className="match-button">
-              keep
-            </button>
-            <button onClick={mehClick} className="match-button">
-              meh
-            </button>
-          </div>
+            <Card.Body>
+              <Card.Title className=" match-info match-name-age">
+                {matches[matchNum].name}, {matches[matchNum].age}
+              </Card.Title>
+
+              <Card.Text className="match-content">
+                Both you and {matches[matchNum].name} like these languages..
+                <div className="coding-content-parent">
+                  {matches[matchNum].favoriteCoding.map(code => {
+                    return (
+                      <div className="icon-container">
+                        <img
+                          className="code-lang-icon"
+                          src={code.image}
+                          alt={code.id}
+                        ></img>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Card.Text>
+            </Card.Body>
+          </Card>
         </div>
       );
     }

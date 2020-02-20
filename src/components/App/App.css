@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
-
 body {
   background: url('/images/desktop-background-devating.svg') no-repeat center
     center fixed;
@@ -9,12 +7,12 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif !important;
 }
 
 .content {
   min-height: 100vh; /* will cover the 100% of viewport */
   flex: 1 0 auto;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .create-button-landing {
@@ -77,9 +75,9 @@ body {
 }
 
 footer {
+  font-family: 'Montserrat Alternates', sans-serif;
   background: #000241;
   padding: 1rem;
-  font-family: 'Montserrat' sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-size: 0.6rem !important;
@@ -101,4 +99,8 @@ footer {
   .create-button-landing {
     width: 50%;
   }
+}
+.Home-Logo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
