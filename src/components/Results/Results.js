@@ -112,9 +112,9 @@ function Results(props) {
                   <div className="coding-content-parent">
                     {matches[matchNum].favoriteCoding.map(code => {
                       return (
-                        <div className="icon-container">
+                        <div className="icon-container-result">
                           <img
-                            className="code-lang-icon"
+                            className="code-lang-icon-result"
                             src={code.image}
                             alt={code.id}
                           ></img>
@@ -170,9 +170,9 @@ function Results(props) {
                 <div className="coding-content-parent">
                   {matches[matchNum].favoriteCoding.map(code => {
                     return (
-                      <div className="icon-container">
+                      <div className="icon-container-result">
                         <img
-                          className="code-lang-icon"
+                          className="code-lang-icon-result"
                           src={code.image}
                           alt={code.id}
                         ></img>

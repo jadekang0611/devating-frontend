@@ -43,13 +43,14 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-.icon-container {
+.icon-container-result {
   background: #661479;
   margin: 1.5rem 1rem;
   border-radius: 16px;
   box-shadow: 0 8px 6px -6px black;
 }
-.code-lang-icon {
+.code-lang-icon-result {
+  width: 100%;
   padding: 0.5rem;
 }
 
@@ -58,7 +59,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 66%;
+  height: 62%;
   border-radius: 16px;
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease;
