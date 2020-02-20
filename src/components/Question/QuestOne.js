@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import maleIcon from '../../icons/male.svg';
 import femaleIcon from '../../icons/female.svg';

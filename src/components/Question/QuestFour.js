@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import csharp from '../../icons/csharp.svg';
 import java from '../../icons/java.svg';

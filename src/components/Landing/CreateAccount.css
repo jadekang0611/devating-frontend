@@ -1,4 +1,5 @@
 .sign-up-container {
+  margin-top: 50px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -10,6 +11,7 @@
   font-size: 2rem;
   font-weight: 400 !important;
   margin-bottom: 50px;
+  margin-top: 20px !important;
 }
 
 .sign-up-form {
@@ -19,7 +21,7 @@
 .sign-up-button {
   width: 100%;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600 !important;
   background-color: #ffffff;
   color: #410042;
   border: none;
@@ -44,4 +46,21 @@
 .form-control:focus {
   background-color: transparent !important;
   color: #ffffff !important;
+}
+
+.logo-container {
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 396px) {
+  .sign-up-button {
+    margin-bottom: 100px !important;
+  }
+}
+
+@media (max-width: 662px) {
+  .sign-up-button {
+    margin-bottom: 100px !important;
+  }
 }

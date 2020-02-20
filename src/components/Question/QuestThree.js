@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import cooking from '../../icons/cooking.svg';
 import gaming from '../../icons/gaming.svg';
 import skiing from '../../icons/skiing.svg';
@@ -13,7 +12,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function QuestThree(props) {
-  //const [favActivities, setFavActivities] = useState([]);
   let favActivities = [];
   let activities = [];
 
@@ -34,10 +32,6 @@ function QuestThree(props) {
     e.target.style.opacity = '0.4';
     e.target.style.border = '1px solid #ffffff';
 
-    // let obj = {
-    //   id: e.target.value
-    // };
-
     let arr = favActivities;
     if (arr.includes(e.target.value)) {
       let index = arr.indexOf(e.target.value);
@@ -47,26 +41,10 @@ function QuestThree(props) {
     } else {
       arr.push(e.target.value);
     }
-    //arr.push(e.target.value);
-
-    //   const uniqueSet = new Set(arr);
-    //   const unique = [...uniqueSet];
-
-    //   console.log("Unique : " + JSON.stringify(unique));
 
     favActivities = arr;
     // TODO: add code to toggle image class on/off
     console.log('fav ' + favActivities);
-
-    // if(e.target.value === 1){
-    //   changeCookingClicked(true);
-    // } else if (e.target.value === 2){
-    //   changeGamingClicked(true);
-    // } else if (e.target.value === 3) {
-    //   changeSkiingClicked(true);
-    // }
-
-    // reset();
   }
 
   let inputClassCooking = cookingClicked ? 'clicked-icon' : 'question-icon';
@@ -75,11 +53,6 @@ function QuestThree(props) {
   let inputClassTraveling = travelingClicked ? 'clicked-icon' : 'question-icon';
   let inputClassTrekking = trekkingClicked ? 'clicked-icon' : 'question-icon';
   let inputClassRunning = runningClicked ? 'clicked-icon' : 'question-icon';
-
-  // function reset(){
-  //   // if the value of the icon doesn't match the value of the clicked icon(e),
-
-  // }
 
   const handleSubmit = el => {
     el.preventDefault();
@@ -105,85 +78,85 @@ function QuestThree(props) {
     });
   };
   return (
-    <div className='question-container'>
+    <div className="question-container">
       <form onSubmit={handleSubmit}>
         <Container>
-          <h2 className='question-prompt'>
+          <h2 className="question-prompt">
             Select some of
             <br></br>
             your favorite activities
           </h2>
           <Row>
-            <Col className='activitiesIcon'>
+            <Col className="activitiesIcon">
               <input
-                type='image'
+                type="image"
                 src={cooking}
-                alt='cooking'
-                width='100'
-                height='auto'
-                value='1'
+                alt="cooking"
+                width="100"
+                height="auto"
+                value="1"
                 className={inputClassCooking}
                 onClick={handleToggle}
               />
             </Col>
-            <Col className='activitiesIcon'>
+            <Col className="activitiesIcon">
               <input
-                type='image'
+                type="image"
                 src={gaming}
-                alt='submit'
-                width='100'
-                height='auto'
-                value='2'
+                alt="submit"
+                width="100"
+                height="auto"
+                value="2"
                 className={inputClassGaming}
                 onClick={handleToggle}
               />
             </Col>
-            <Col className='activitiesIcon'>
+            <Col className="activitiesIcon">
               <input
-                type='image'
+                type="image"
                 src={skiing}
-                alt='submit'
-                width='100'
-                height='auto'
-                value='3'
+                alt="submit"
+                width="100"
+                height="auto"
+                value="3"
                 className={inputClassSkiing}
                 onClick={handleToggle}
               />
             </Col>
           </Row>
           <Row>
-            <Col className='activitiesIcon'>
+            <Col className="activitiesIcon">
               <input
-                type='image'
+                type="image"
                 src={traveling}
-                alt='submit'
-                width='100'
-                height='auto'
-                value='4'
+                alt="submit"
+                width="100"
+                height="auto"
+                value="4"
                 className={inputClassTraveling}
                 onClick={handleToggle}
               />
             </Col>
-            <Col className='activitiesIcon'>
+            <Col className="activitiesIcon">
               <input
-                type='image'
+                type="image"
                 src={trekking}
-                alt='submit'
-                width='100'
-                height='auto'
-                value='5'
+                alt="submit"
+                width="100"
+                height="auto"
+                value="5"
                 className={inputClassTrekking}
                 onClick={handleToggle}
               />
             </Col>
-            <Col className='activitiesIcon'>
+            <Col className="activitiesIcon">
               <input
-                type='image'
+                type="image"
                 src={running}
-                alt='submit'
-                width='100'
-                height='auto'
-                value='6'
+                alt="submit"
+                width="100"
+                height="auto"
+                value="6"
                 className={inputClassRunning}
                 onClick={handleToggle}
               />
@@ -191,9 +164,10 @@ function QuestThree(props) {
           </Row>
           <div>
             <button
-              type='submit'
-              className='next-button'
-              id='question-three-button'>
+              type="submit"
+              className="next-button"
+              id="question-three-button"
+            >
               Next
             </button>
           </div>

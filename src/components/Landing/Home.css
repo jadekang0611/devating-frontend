@@ -32,6 +32,7 @@
   padding-bottom: 8px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  margin-bottom: 10rem;
 }
 
 /* .Home-Logo {
@@ -40,7 +41,7 @@
 } */
 
 .landing-content {
-  padding-top: 40px;
+  padding-top: 60px;
   letter-spacing: 0.1em;
   font-size: 30px;
   line-height: 2;
@@ -54,9 +55,20 @@
   flex-direction: column;
 }
 
+.home-intro {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.intro-content {
+  font-size: 40px;
+  line-height: 2;
+}
+
 @media (max-width: 576px) {
   .sign-in-button-landing {
     width: 50%;
+    margin-bottom: 10rem;
   }
   .create-button-landing {
     width: 50%;

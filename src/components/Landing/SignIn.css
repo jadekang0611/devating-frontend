@@ -7,6 +7,7 @@ body {
 }
 
 .sign-in-container {
+  margin-top: 50px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -18,6 +19,7 @@ body {
   font-size: 2rem;
   font-weight: 400 !important;
   margin-bottom: 50px;
+  margin-top: 20px !important;
 }
 
 .sign-in-form {
@@ -29,7 +31,7 @@ body {
 .sign-in-button {
   width: 100%;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 40px;
   padding-top: 8px;
   padding-bottom: 8px;

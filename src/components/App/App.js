@@ -5,7 +5,6 @@ import CreateAccount from '../Landing/CreateAccount';
 import About from '../About/About';
 import Dashboard from '../Dashboard/Dashboard';
 import Loading from '../Loading/Loading';
-import MatchCard from '../MatchCard/MatchCard';
 import Question from '../Question/Question';
 import Results from '../Results/Results';
 import Home from '../Landing/Home';
@@ -13,7 +12,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faMars , faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 library.add(faMars, fab, faEnvelope);
 
 function App() {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Dashboard.css';
 import Card from 'react-bootstrap/Card';

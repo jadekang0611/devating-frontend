@@ -15,6 +15,7 @@
 .items {
   margin: 16px;
   font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 24px;
 }
 .navbar-light .navbar-nav {
   color: #ffffff;
