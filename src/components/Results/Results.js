@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import './Results.css';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 const axios = require('axios');
 
@@ -80,35 +79,52 @@ function Results(props) {
   if (matches.length > 0) {
     if (matchNum === matches.length - 1) {
       return (
-        <div>
+        <div style={{ width: '24rem' }} className="card-container">
           <h2 className="result-question">Take a chance on..</h2>
-          <div className="card-container">
-            <div>
-              <img src={matches[matchNum].image} alt="flower"></img>
-              <div className="match-info">
-                <h3 className="match-name-age">
+          <div className="match-container-parent">
+            <h3 className="result-question">Take a chance on..</h3>
+
+            <Card style={{ width: '24rem' }} className="card-container">
+              <div className="image-container">
+                <Card.Img
+                  variant="top"
+                  className="profile-picture"
+                  src={matches[matchNum].image}
+                  alt={matches[matchNum].name}
+                />
+                <div className="overlay" />
+                <div className="profile-button-container">
+                  <button onClick={lastClick} className="match-button1">
+                    keep
+                  </button>
+                  <button onClick={lastMehClick} className="match-button2">
+                    done
+                  </button>
+                </div>
+              </div>
+              <Card.Body>
+                <Card.Title className=" match-info match-name-age">
                   {matches[matchNum].name}, {matches[matchNum].age}
-                </h3>
-                <p>
+                </Card.Title>
+
+                <Card.Text className="match-content">
                   Both you and {matches[matchNum].name} like these languages..
-                </p>
-              </div>
-              <div className="icon-container">
-                {matches[matchNum].favoriteCoding.map(code => {
-                  return (
-                    <div className="code-lang-icon">
-                      <img src={code.image}></img>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-            <button onClick={lastClick} className="match-button">
-              keep
-            </button>
-            <button onClick={lastMehClick} className="match-button">
-              done
-            </button>
+                  <div className="coding-content-parent">
+                    {matches[matchNum].favoriteCoding.map(code => {
+                      return (
+                        <div className="icon-container">
+                          <img
+                            className="code-lang-icon"
+                            src={code.image}
+                            alt={code.id}
+                          ></img>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </div>
         </div>
       );

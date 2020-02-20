@@ -1,6 +1,8 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import './Dashboard.css';
+import Card from 'react-bootstrap/Card';
 
 import csharp from '../../icons/csharp.svg';
 import java from '../../icons/java.svg';
@@ -80,62 +82,69 @@ function Dashboard(props) {
     // console.log(user[0].keep[0].name);
     return (
       <div>
-        <button
-          onClick={() => setInput(!input)}
-          className="collection-update-button"
-        >
-          Edit Name
+        <button className="name-button" onClick={() => setInput(!input)}>
+          Edit my name
         </button>
         {input && (
           <input
             onChange={e => setNewName(e.target.value)}
             type="text"
-            className="collection-update-input"
+            className="name-update-input"
           />
         )}
         {input && (
-          <button onClick={updateName} className="collection-update-button">
+          <button onClick={updateName} className="name-save-button">
             Save
           </button>
         )}
-        <button
-          className="collection-update-button collection-delete-button"
-          onClick={deleteEntry}
-        >
-          Delete Account
+        <button className="account-delete-button" onClick={deleteEntry}>
+          Delete my account
         </button>
-        <div>Name: {user[0].name}</div>
-        <div>Age: {user[0].age}</div>
-        <div>Favorite Coding Languages</div>
-        <div className="icon-container">
+        <div className="profile-info">Name: {user[0].name}</div>
+        <div className="profile-info">Age: {user[0].age}</div>
+        <div className="profile-info">Favorite Coding Languages</div>
+        <div className="profile-icon-container profile-info">
           {user[0].favoriteCoding.map(code => {
             return (
-              <div className="code-lang-icon">
-                <img src={codingImages[code.id]}></img>
+              <div className="profile-icon-container">
+                <img
+                  className="profile-code-lang-icon"
+                  src={codingImages[code.id]}
+                  alt={code.id}
+                ></img>
               </div>
             );
           })}
         </div>
-        <div>Favorite Activities</div>
-        <div className="icon-container">
+        <div className="profile-info">Favorite Activities</div>
+        <div className="profile-icon-container profile-info">
           {user[0].favoriteActivities.map(activity => {
             return (
-              <div className="code-lang-icon">
-                <img src={activityImages[activity.id]}></img>
+              <div className="profile-icon-container">
+                <img
+                  className="profile-code-lang-icon"
+                  src={activityImages[activity.id]}
+                  alt={activity.id}
+                ></img>
               </div>
             );
           })}
         </div>
-        <div>My Kept Matches</div>
+        <div className="profile-info">My Kept Matches</div>
 
         {user[0].keep.map((matchUser, i) => {
           return (
-            <div>
-              <img src={matchUser.image} alt={matchUser.name} />
+            <Card style={{ width: '24rem' }} className="keep-card-container">
+              <Card.Img src={matchUser.image} alt={matchUser.name} />
+              <Card.Body>
+                <Card.Title className=" match-info match-name-age">
+                  {matchUser.name}, {matchUser.age}
+                </Card.Title>
+              </Card.Body>
               <button value={i} onClick={onRemove}>
                 Delete
               </button>
-            </div>
+            </Card>
           );
         })}
       </div>
