@@ -27,6 +27,7 @@ function QuestOne(props) {
     props.history.push({
       pathname: '/question/2',
       state: {
+        avatar: props.location.state.avatar,
         name: props.location.state.name,
         email: props.location.state.email,
         password: props.location.state.password,

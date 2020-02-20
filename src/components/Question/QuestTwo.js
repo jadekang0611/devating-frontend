@@ -20,6 +20,7 @@ function QuestTwo(props) {
     props.history.push({
       pathname: '/question/3',
       state: {
+        avatar: props.location.state.avatar,
         name: props.location.state.name,
         email: props.location.state.email,
         password: props.location.state.password,

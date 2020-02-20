@@ -56,6 +56,7 @@ function QuestFour(props) {
     // TODO: MAKE SURE that the object that we build to send to the API is formatted exactly the same as the object that the API accepts - otherwise, we will not have the proper data in our database.
 
     const newUser = {
+      image: props.location.state.avatar,
       name: props.location.state.name,
       email: props.location.state.email,
       age: props.location.state.age,
@@ -75,6 +76,7 @@ function QuestFour(props) {
           props.history.push({
             pathname: '/results',
             state: {
+              image: props.location.state.avatar,
               name: props.location.state.name,
               email: props.location.state.email,
               age: props.location.state.age,

@@ -3,22 +3,6 @@ import { useState, useEffect } from 'react';
 import './Results.css';
 import Card from 'react-bootstrap/Card';
 
-import csharp from '../../icons/csharp.svg';
-import java from '../../icons/java.svg';
-import javascript from '../../icons/javascript.svg';
-import nodeJS from '../../icons/nodeJS.svg';
-import php from '../../icons/php.svg';
-import python from '../../icons/python.svg';
-import react from '../../icons/react.svg';
-import sql from '../../icons/sql.svg';
-import swift from '../../icons/swift.svg';
-import cooking from '../../icons/cooking.svg';
-import gaming from '../../icons/gaming.svg';
-import skiing from '../../icons/skiing.svg';
-import traveling from '../../icons/traveling.svg';
-import trekking from '../../icons/trekking.svg';
-import running from '../../icons/running.svg';
-
 const axios = require('axios');
 
 function Results(props) {

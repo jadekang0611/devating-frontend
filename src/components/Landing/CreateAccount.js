@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import './CreateAccount.css';
 import Form from 'react-bootstrap/Form';
-// import request from 'superagent';
 
 function CreateAccount(props) {
   const [name, setName] = useState('');
@@ -12,7 +11,7 @@ function CreateAccount(props) {
   const handleSubmit = e => {
     e.preventDefault();
     props.history.push({
-      pathname: '/question/1',
+      pathname: '/question/avatar',
       state: { name: name, email: email, password: password }
     });
   };
@@ -27,7 +26,6 @@ function CreateAccount(props) {
         height="120"
       />
       <h2 className="sign-up-prompt">Let's get started</h2>
-
       <Form className="sign-up-form " onSubmit={handleSubmit}>
         <Form.Group className="input-field">
           <Form.Control
@@ -37,7 +35,7 @@ function CreateAccount(props) {
             onChange={e => setName(e.target.value)}
           />
         </Form.Group>
-        <Form.Group  className="input-field">
+        <Form.Group className="input-field">
           <Form.Control
             type="email"
             value={email}
