@@ -24,7 +24,7 @@ function SignIn(props) {
   function handleSignIn(e) {
     e.preventDefault();
 
-    axios.get(url + '/' + inputEmail + '/' + inputPassword ).then(res => {
+    axios.get(url + '/' + inputEmail /*+ '/' + inputPassword*/ ).then(res => {
       let user = res.data;
       if (user.length !== 0) {
         props.history.push({
@@ -39,7 +39,7 @@ function SignIn(props) {
     });
   }
 
-  const url = 'https://devating-backend.herokuapp.com';
+  const url = 'https://devating-backend.herokuapp.com/match';
 
   return (
     <div className="sign-in-container">
