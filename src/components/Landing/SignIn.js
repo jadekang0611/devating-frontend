@@ -1,8 +1,11 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Link, Switch, Route, Router, Redirect } from 'react-router-dom';
+import { useState } from 'react';
+import './SignIn.css';
+import Form from 'react-bootstrap/Form';
 
-function SignIn() {
+const axios = require('axios');
+
+function SignIn(props) {
   const [inputEmail, setInputEmail] = useState('');
   const [inputPassword, setInputPassword] = useState('');
 
@@ -18,27 +21,63 @@ function SignIn() {
     console.log(e.target.value);
   }
 
-  return (
-    <div>
-      <p>Please sign in</p>
-      <form>
-        <input
-          type="text"
-          value={inputEmail}
-          placeholder="dev@devating.com"
-          onChange={handleEmailChange}
-        ></input>
-        <input
-          type="text"
-          value={inputPassword}
-          placeholder="love1234"
-          onChange={handlePasswordChange}
-        ></input>
+  function handleSignIn(e) {
+    e.preventDefault();
 
-        <button type="submit">
-          Sign In
-        </button>
-      </form>
+    axios.get(url + '/' + inputEmail /*+ '/' + inputPassword*/ ).then(res => {
+      let user = res.data;
+      if (user.length !== 0) {
+        props.history.push({
+          pathname: '/dashboard',
+          state: {
+            email: inputEmail
+          }
+        });
+      } else {
+        alert('SOMETHING WENT WRONG');
+      }
+    });
+  }
+
+  const url = 'https://devating-backend.herokuapp.com/match';
+
+  return (
+    <div className="sign-in-container">
+      <img
+        className="mb-4 logo-container"
+        src="./images/devatinglogo.gif"
+        alt="devating"
+        width="120"
+        height="120"
+      />
+      <h2 className="sign-in-prompt">Please sign in</h2>
+      <Form className="sign-in-form">
+        <Form.Group controlID="formGroupEmail" className="input-field">
+          <Form.Control
+            type="email"
+            value={inputEmail}
+            placeholder="Enter email"
+            onChange={handleEmailChange}
+          />
+        </Form.Group>
+        <Form.Group className="input-field" controlID="formGroupEmail">
+          <Form.Control
+            type="password"
+            value={inputPassword}
+            placeholder="Password"
+            onChange={handlePasswordChange}
+          />
+        </Form.Group>
+        <div className="text-center sign-in-button-container">
+          <button
+            className="sign-in-button"
+            type="submit"
+            onClick={handleSignIn}
+          >
+            Sign In
+          </button>
+        </div>
+      </Form>
     </div>
   );
 }

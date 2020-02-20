@@ -1,67 +1,64 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Link, Switch, Route, Router, Redirect } from 'react-router-dom';
+import { useState } from 'react';
+import './CreateAccount.css';
+import Form from 'react-bootstrap/Form';
+// import request from 'superagent';
 
-function CreateAccount() {
-  const [inputName, setInputName] = useState('');
-  const [inputEmail, setInputEmail] = useState('');
-  const [inputPassword, setInputPassword] = useState('');
-  const [inputPasswordConfirm, setInputPasswordConfirm] = useState('');
+function CreateAccount(props) {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  function handleNameChange(e) {
+  const handleSubmit = e => {
     e.preventDefault();
-    setInputName(e.target.value);
-    console.log(e.target.value);
-  }
-
-  function handleEmailChange(e) {
-    e.preventDefault();
-    setInputEmail(e.target.value);
-    console.log(e.target.value);
-  }
-
-  function handlePasswordChange(e) {
-    e.preventDefault();
-    setInputPassword(e.target.value);
-    console.log(e.target.value);
-  }
-
-  function handlePasswordConfirmChange(e) {
-    e.preventDefault();
-    setInputPasswordConfirm(e.target.value);
-    console.log(e.target.value);
-  }
+    props.history.push({
+      pathname: '/question/1',
+      state: { name: name, email: email, password: password }
+    });
+  };
 
   return (
-    <div>
-      <p>Please fill out the following information</p>
-      <form>
-        <input
-          type="text"
-          value={inputName}
-          placeholder="Name"
-          onChange={handleNameChange}
-        ></input>
-        <input
-          type="text"
-          value={inputEmail}
-          placeholder="dev@devating.com"
-          onChange={handleEmailChange}
-        ></input>
-        <input
-          type="text"
-          value={inputPassword}
-          placeholder="love1234"
-          onChange={handlePasswordChange}
-        ></input>
-        <input
-          type="text"
-          value={inputPasswordConfirm}
-          placeholder="love1234"
-          onChange={handlePasswordConfirmChange}
-        ></input>
-        <button type="submit">Next</button>
-      </form>
+    <div className="sign-up-container">
+      <img
+        className="mb-4 logo-container"
+        src="./images/devatinglogo.gif"
+        alt="devating"
+        width="120"
+        height="120"
+      />
+      <h2 className="sign-up-prompt">Let's get started</h2>
+
+      <Form className="sign-up-form " onSubmit={handleSubmit}>
+        <Form.Group className="input-field">
+          <Form.Control
+            type="text"
+            value={name}
+            placeholder="Name"
+            onChange={e => setName(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group  className="input-field">
+          <Form.Control
+            type="email"
+            value={email}
+            placeholder="dev@devating.com"
+            onChange={e => setEmail(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group controlID="formGroupEmail" className="input-field">
+          <Form.Control
+            type="password"
+            value={password}
+            placeholder="love1234"
+            onChange={e => setPassword(e.target.value)}
+          />
+        </Form.Group>
+        <div className="text-center sign-up-button-container">
+          <button className="sign-up-button" type="submit">
+            Next
+          </button>
+        </div>
+      </Form>
     </div>
   );
 }

@@ -1,55 +1,39 @@
 import React from 'react';
+import NavBar from '../Nav/NavBar';
 import SignIn from '../Landing/SignIn';
 import CreateAccount from '../Landing/CreateAccount';
 import About from '../About/About';
 import Dashboard from '../Dashboard/Dashboard';
-import Loading from '../Loading/Loading';
-import MatchCard from '../MatchCard/MatchCard';
+// import Loading from '../Loading/Loading';
 import Question from '../Question/Question';
 import Results from '../Results/Results';
-import { Link, Switch, Route, Redirect } from 'react-router-dom';
-
+import Home from '../Landing/Home';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faMars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+library.add(faMars, fab, faEnvelope);
 
 function App() {
   return (
     <div>
-      <header>
-        <h1>Devating</h1>
-      </header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="about">About</Link>
-          </li>
-          <li>
-            <Link to="/signin">Sign In</Link>
-          </li>
-          <li>
-            {' '}
-            <Link to="/createAccount">Create a new account</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">See Your Matches</Link>
-          </li>
-          <li>
-            <Link to="/">Devating Gets Your Romantic Programmers</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Switch>
-        <Route exact path="/signin" component={SignIn} />
-        <Route exact path="/createAccount" component={CreateAccount} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/dashboard" component={Dashboard} />
-      </Switch>
-      <Loading />
-      <MatchCard />
-      <Question />
-      <Results />
-
-      <footer>Copyright &copy; 2020</footer>
+      <div className="content">
+        <NavBar />
+        <main>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/signin" component={SignIn} />
+            <Route path="/createAccount" component={CreateAccount} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route path="/question" component={Question} />
+            {/* <Route exact path="/loading" component={Loading} /> */}
+            <Route exact path="/results" component={Results} />
+          </Switch>
+        </main>
+      </div>
+      <footer>Copyright &copy; 2020 DevAting. All Rights Reserved</footer>
     </div>
   );
 }
