@@ -105,83 +105,85 @@ function QuestThree(props) {
     });
   };
   return (
-    <div className="question-container">
+    <div className='question-container'>
       <form onSubmit={handleSubmit}>
         <Container>
-          <h2 className="question-prompt">
-            Select some of your favorite activities
+          <h2 className='question-prompt'>
+            Select some of
+            <br></br>
+            your favorite activities
           </h2>
           <Row>
-            <Col className="activitiesIcon">
+            <Col className='activitiesIcon'>
               <input
-                type="image"
+                type='image'
                 src={cooking}
-                alt="cooking"
-                width="100"
-                height="auto"
-                value="1"
+                alt='cooking'
+                width='100'
+                height='auto'
+                value='1'
                 className={inputClassCooking}
                 onClick={handleToggle}
               />
             </Col>
-            <Col className="activitiesIcon">
+            <Col className='activitiesIcon'>
               <input
-                type="image"
+                type='image'
                 src={gaming}
-                alt="submit"
-                width="100"
-                height="auto"
-                value="2"
+                alt='submit'
+                width='100'
+                height='auto'
+                value='2'
                 className={inputClassGaming}
                 onClick={handleToggle}
               />
             </Col>
-            <Col className="activitiesIcon">
+            <Col className='activitiesIcon'>
               <input
-                type="image"
+                type='image'
                 src={skiing}
-                alt="submit"
-                width="100"
-                height="auto"
-                value="3"
+                alt='submit'
+                width='100'
+                height='auto'
+                value='3'
                 className={inputClassSkiing}
                 onClick={handleToggle}
               />
             </Col>
           </Row>
           <Row>
-            <Col className="activitiesIcon">
+            <Col className='activitiesIcon'>
               <input
-                type="image"
+                type='image'
                 src={traveling}
-                alt="submit"
-                width="100"
-                height="auto"
-                value="4"
+                alt='submit'
+                width='100'
+                height='auto'
+                value='4'
                 className={inputClassTraveling}
                 onClick={handleToggle}
               />
             </Col>
-            <Col className="activitiesIcon">
+            <Col className='activitiesIcon'>
               <input
-                type="image"
+                type='image'
                 src={trekking}
-                alt="submit"
-                width="100"
-                height="auto"
-                value="5"
+                alt='submit'
+                width='100'
+                height='auto'
+                value='5'
                 className={inputClassTrekking}
                 onClick={handleToggle}
               />
             </Col>
-            <Col className="activitiesIcon">
+            <Col className='activitiesIcon'>
               <input
-                type="image"
+                type='image'
                 src={running}
-                alt="submit"
-                width="100"
-                height="auto"
-                value="6"
+                alt='submit'
+                width='100'
+                height='auto'
+                value='6'
                 className={inputClassRunning}
                 onClick={handleToggle}
               />
@@ -189,10 +191,9 @@ function QuestThree(props) {
           </Row>
           <div>
             <button
-              type="submit"
-              className="next-button"
-              id="question-three-button"
-            >
+              type='submit'
+              className='next-button'
+              id='question-three-button'>
               Next
             </button>
           </div>

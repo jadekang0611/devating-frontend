@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './CreateAccount.css';
 import Form from 'react-bootstrap/Form';
-import request from 'superagent';
+// import request from 'superagent';
 
 const axios = require('axios');
 
@@ -41,44 +41,44 @@ function CreateAccount(props) {
   // };
 
   return (
-    <div className="sign-up-container">
-      <img
-        className="mb-4"
-        src="./images/logo3.png"
-        alt="devating"
-        width="150"
-        height="150"
-      />
-      <h2 className="sign-up-prompt">Create a new account</h2>
+    <div className='sign-up-container'>
+      {/* <img
+        className='mb-4'
+        src='./images/devating-landing-logo.svg'
+        alt='devating'
+        width='150'
+        height='150'
+      /> */}
+      <h2 className='sign-up-prompt'>Let's get started</h2>
       {/* <input type="file" onChange={fileChangedHandler} />
       <button onClick={uploadHandler}>Upload your image</button> */}
-      <Form className="sign-up-form " onSubmit={handleSubmit}>
-        <Form.Group className="input-field">
+      <Form className='sign-up-form ' onSubmit={handleSubmit}>
+        <Form.Group className='input-field'>
           <Form.Control
-            type="text"
+            type='text'
             value={name}
-            placeholder="Name"
+            placeholder='Name'
             onChange={e => setName(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlID="formGroupEmail" className="input-field">
+        <Form.Group controlID='formGroupEmail' className='input-field'>
           <Form.Control
-            type="text"
+            type='text'
             value={email}
-            placeholder="dev@devating.com"
+            placeholder='dev@devating.com'
             onChange={e => setEmail(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlID="formGroupEmail" className="input-field">
+        <Form.Group controlID='formGroupEmail' className='input-field'>
           <Form.Control
-            type="text"
+            type='text'
             value={password}
-            placeholder="love1234"
+            placeholder='love1234'
             onChange={e => setPassword(e.target.value)}
           />
         </Form.Group>
-        <div className="text-center sign-up-button-container">
-          <button className="sign-up-button" type="submit">
+        <div className='text-center sign-up-button-container'>
+          <button className='sign-up-button' type='submit'>
             Next
           </button>
         </div>

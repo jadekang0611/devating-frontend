@@ -42,38 +42,37 @@ function SignIn(props) {
   const url = 'http://localhost:7000/signin';
 
   return (
-    <div className="sign-in-container">
-      <img
-        className="mb-4"
-        src="./images/logo3.png"
-        alt="devating"
-        width="150"
-        height="150"
-      />
-      <h2 className="sign-in-prompt">Please sign in</h2>
-      <Form className="sign-in-form">
-        <Form.Group controlID="formGroupEmail" className="input-field">
+    <div className='sign-in-container'>
+      {/* <img
+        className='mb-4'
+        src='./images/devating-landing-logo.svg'
+        alt='devating'
+        width='300'
+        height='300'
+      /> */}
+      <h2 className='sign-in-prompt'>Please sign in</h2>
+      <Form className='sign-in-form'>
+        <Form.Group controlID='formGroupEmail' className='input-field'>
           <Form.Control
-            type="email"
+            type='email'
             value={inputEmail}
-            placeholder="Enter email"
+            placeholder='Enter email'
             onChange={handleEmailChange}
           />
         </Form.Group>
-        <Form.Group className="input-field" controlID="formGroupEmail">
+        <Form.Group className='input-field' controlID='formGroupEmail'>
           <Form.Control
-            type="password"
+            type='password'
             value={inputPassword}
-            placeholder="Password"
+            placeholder='Password'
             onChange={handlePasswordChange}
           />
         </Form.Group>
-        <div className="text-center sign-in-button-container">
+        <div className='text-center sign-in-button-container'>
           <button
-            className="sign-in-button"
-            type="submit"
-            onClick={handleSignIn}
-          >
+            className='sign-in-button'
+            type='submit'
+            onClick={handleSignIn}>
             Sign In
           </button>
         </div>

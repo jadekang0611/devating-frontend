@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
+
 body {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -14,34 +16,41 @@ body {
 }
 
 .sign-in-prompt {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 16px;
+  font-size: 2rem;
+  font-weight: 400 !important;
+  margin-bottom: 50px;
 }
 
 .sign-in-form {
   margin: auto;
+  width: 350px;
+  max-width: 80%;
 }
 
 .sign-in-button {
   width: 100%;
   font-size: 16px;
-  font-weight: 700;
-  background-color: #ffffff;
-  color: #410042;
-  border: none;
-  border-radius: 32px;
+  font-weight: 400;
+  border-radius: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  height: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: #000241;
+  background-color: rgba(255, 255, 255, 0.701);
+  border: 0.15rem solid white;
 }
 
-/* .sign-in-button:hover {
+.sign-in-button:hover {
   border: 1px solid #ffffff;
-  background-color: transparent;
-  color: white;
-} */
+  background-color: white;
+  color: #000241;
+}
 
 .sign-in-button:focus {
   width: 100%;
