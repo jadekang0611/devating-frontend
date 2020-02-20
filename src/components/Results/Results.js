@@ -3,15 +3,42 @@ import { useState, useEffect } from 'react';
 import './Results.css';
 import Card from 'react-bootstrap/Card';
 
+// import csharp from '../../icons/csharp.svg';
+// import java from '../../icons/java.svg';
+// import javascript from '../../icons/javascript.svg';
+// import nodeJS from '../../icons/nodeJS.svg';
+// import php from '../../icons/php.svg';
+// import python from '../../icons/python.svg';
+// import react from '../../icons/react.svg';
+// import sql from '../../icons/sql.svg';
+// import swift from '../../icons/swift.svg';
+// import cooking from '../../icons/cooking.svg';
+// import gaming from '../../icons/gaming.svg';
+// import skiing from '../../icons/skiing.svg';
+// import traveling from '../../icons/traveling.svg';
+// import trekking from '../../icons/trekking.svg';
+// import running from '../../icons/running.svg';
+
 const axios = require('axios');
 
 function Results(props) {
-  const url = 'http://localhost:7000/';
+  const url = 'https://devating-backend.herokuapp.com/';
   const email = props.location.state.email;
   //const email = "sharline@email.com";
   const [matches, setMatch] = useState([]);
   const [user, setUser] = useState([]);
   const [matchNum, setMatchNum] = useState(0);
+  // const codingImages = [
+  //   csharp,
+  //   java,
+  //   javascript,
+  //   nodeJS,
+  //   php,
+  //   python,
+  //   react,
+  //   sql,
+  //   swift
+  // ];
 
   useEffect(() => {
     axios.get(url + 'match/' + email).then(res => setMatch(res.data));
@@ -80,7 +107,6 @@ function Results(props) {
     if (matchNum === matches.length - 1) {
       return (
         <div style={{ width: '24rem' }} className="card-container">
-          <h2 className="result-question">Take a chance on..</h2>
           <div className="match-container-parent">
             <h3 className="result-question">Take a chance on..</h3>
 
@@ -115,6 +141,7 @@ function Results(props) {
                         <div className="icon-container-result">
                           <img
                             className="code-lang-icon-result"
+                            // src={codingImages[code.id]}
                             src={code.image}
                             alt={code.id}
                           ></img>
@@ -173,6 +200,7 @@ function Results(props) {
                       <div className="icon-container-result">
                         <img
                           className="code-lang-icon-result"
+                          // src={codingImages[code.id]}
                           src={code.image}
                           alt={code.id}
                         ></img>

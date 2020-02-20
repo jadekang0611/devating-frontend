@@ -39,13 +39,11 @@ function QuestFour(props) {
     }
 
     favCoding = arr;
-    // TODO: add code to toggle image class on/off
-    console.log('fav ' + favCoding);
   }
 
   const handleSubmit = el => {
     el.preventDefault();
-    const url = 'http://localhost:7000/signup';
+    const url = 'https://devating-backend.herokuapp.com/signup';
 
     for (let i = 0; i < favCoding.length; i++) {
       let obj = {
@@ -53,7 +51,7 @@ function QuestFour(props) {
       };
       coding.push(obj);
     }
-    console.log('Final array: ' + JSON.stringify(coding));
+
     // TODO: Call API and create user. If user creates successfully, then go to the results page. Otherwise, display error message.
     // TODO: MAKE SURE that the object that we build to send to the API is formatted exactly the same as the object that the API accepts - otherwise, we will not have the proper data in our database.
 
@@ -67,13 +65,12 @@ function QuestFour(props) {
       favoriteActivities: props.location.state.activities,
       favoriteCoding: coding
     };
-    console.log(JSON.stringify(newUser));
+
     setUserData(newUser);
     axios
       .post(url, newUser)
       .then(res => {
         let user = res.data;
-        console.log(user);
         if (user.length !== 0) {
           props.history.push({
             pathname: '/results',

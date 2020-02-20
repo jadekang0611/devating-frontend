@@ -24,7 +24,6 @@ function QuestThree(props) {
 
   function handleToggle(e) {
     e.preventDefault();
-    console.log(e.target);
 
     e.target.style.backgroundColor = 'gray';
     e.target.style.padding = '16px';
@@ -43,8 +42,6 @@ function QuestThree(props) {
     }
 
     favActivities = arr;
-    // TODO: add code to toggle image class on/off
-    console.log('fav ' + favActivities);
   }
 
   let inputClassCooking = cookingClicked ? 'clicked-icon' : 'question-icon';
@@ -62,7 +59,6 @@ function QuestThree(props) {
       };
       activities.push(obj);
     }
-    console.log('Final array: ' + JSON.stringify(activities));
 
     props.history.push({
       pathname: '/question/4',

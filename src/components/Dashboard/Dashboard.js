@@ -25,10 +25,10 @@ import running from '../../icons/running.svg';
 const axios = require('axios');
 
 function Dashboard(props) {
-  const url = 'http://localhost:7000/match/get/';
-  const updateUrl = 'http://localhost:7000/match/';
+  const url = 'https://devating-backend.herokuapp.com/match/get/';
+  const updateUrl = 'https://devating-backend.herokuapp.com/match/';
   const email = props.location.state.email;
-  const updateNameUrl = 'http://localhost:7000/' + email;
+  const updateNameUrl = 'https://devating-backend.herokuapp.com/' + email;
   const activityImages = [
     cooking,
     gaming,

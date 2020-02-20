@@ -13,7 +13,6 @@ function QuestTwo(props) {
   function handleWantGender(e) {
     e.preventDefault();
     setWantGender(e.target.value);
-    console.log(e.target.value);
   }
 
   const handleSubmit = el => {

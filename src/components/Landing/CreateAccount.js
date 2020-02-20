@@ -37,9 +37,9 @@ function CreateAccount(props) {
             onChange={e => setName(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlID="formGroupEmail" className="input-field">
+        <Form.Group  className="input-field">
           <Form.Control
-            type="text"
+            type="email"
             value={email}
             placeholder="dev@devating.com"
             onChange={e => setEmail(e.target.value)}

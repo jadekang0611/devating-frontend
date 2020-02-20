@@ -9,23 +9,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function QuestOne(props) {
-  console.log('Hit page QuestionOne');
   const [userAge, setUserAge] = useState('');
   const [userGender, setUserGender] = useState('');
-  // const [submit, setSubmit] = useState('');
 
   function handleAgeChange(e) {
     e.preventDefault();
     setUserAge(e.target.value);
-    console.log(e.target.value);
   }
 
   function handleGender(e) {
     e.preventDefault();
     setUserGender(e.target.value);
-
-    console.log(e.target.value);
-    console.log(props.location.state.name);
   }
 
   const handleSubmit = el => {
