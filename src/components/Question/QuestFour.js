@@ -100,7 +100,7 @@ function QuestFour(props) {
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">
-            Select some of your 
+            Select some of your
             <br></br>
             favorite coding languages
           </h2>

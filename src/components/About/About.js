@@ -28,8 +28,8 @@ function About() {
       <hr></hr>
       <h2>Founders</h2>
       <CardDeck>
-        <Card>
-          <Card.Img variant="top" src="./images/jade.png" />
+        <Card className="about-card">
+          <Card.Img className="about-card-image" variant="top" src="./images/jade.png" />
           <Card.Body>
             <Card.Title className="bio-title">
               Jade Kang, Scrum Master/Engineer
@@ -64,8 +64,8 @@ function About() {
             </a>
           </Card.Footer>
         </Card>
-        <Card>
-          <Card.Img variant="top" src="./images/daisy.png" />
+        <Card  className="about-card">
+          <Card.Img className="about-card-image" variant="top" src="./images/daisy.png" />
           <Card.Body>
             <Card.Title className="bio-title">
               Daisy Yau, Project Manager/Engineer
@@ -103,8 +103,8 @@ function About() {
         </Card>
       </CardDeck>
       <CardDeck>
-        <Card>
-          <Card.Img variant="top" src="./images/abdul.png" />
+        <Card className="about-card">
+          <Card.Img className="about-card-image" variant="top" src="./images/abdul.png" />
           <Card.Body>
             <Card.Title className="bio-title">
               Abdul James, QA Engineer
@@ -141,8 +141,8 @@ function About() {
             </a>
           </Card.Footer>
         </Card>
-        <Card>
-          <Card.Img variant="top" src="./images/sage.png" />
+        <Card className="about-card">
+          <Card.Img className="about-card-image" variant="top" src="./images/sage.png" />
           <Card.Body>
             <Card.Title className="bio-title">
               Sage Kearney, UI Engineer
