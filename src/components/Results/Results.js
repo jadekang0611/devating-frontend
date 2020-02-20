@@ -3,21 +3,21 @@ import { useState, useEffect } from 'react';
 import './Results.css';
 import Card from 'react-bootstrap/Card';
 
-// import csharp from '../../icons/csharp.svg';
-// import java from '../../icons/java.svg';
-// import javascript from '../../icons/javascript.svg';
-// import nodeJS from '../../icons/nodeJS.svg';
-// import php from '../../icons/php.svg';
-// import python from '../../icons/python.svg';
-// import react from '../../icons/react.svg';
-// import sql from '../../icons/sql.svg';
-// import swift from '../../icons/swift.svg';
-// import cooking from '../../icons/cooking.svg';
-// import gaming from '../../icons/gaming.svg';
-// import skiing from '../../icons/skiing.svg';
-// import traveling from '../../icons/traveling.svg';
-// import trekking from '../../icons/trekking.svg';
-// import running from '../../icons/running.svg';
+import csharp from '../../icons/csharp.svg';
+import java from '../../icons/java.svg';
+import javascript from '../../icons/javascript.svg';
+import nodeJS from '../../icons/nodeJS.svg';
+import php from '../../icons/php.svg';
+import python from '../../icons/python.svg';
+import react from '../../icons/react.svg';
+import sql from '../../icons/sql.svg';
+import swift from '../../icons/swift.svg';
+import cooking from '../../icons/cooking.svg';
+import gaming from '../../icons/gaming.svg';
+import skiing from '../../icons/skiing.svg';
+import traveling from '../../icons/traveling.svg';
+import trekking from '../../icons/trekking.svg';
+import running from '../../icons/running.svg';
 
 const axios = require('axios');
 
@@ -28,17 +28,17 @@ function Results(props) {
   const [matches, setMatch] = useState([]);
   const [user, setUser] = useState([]);
   const [matchNum, setMatchNum] = useState(0);
-  // const codingImages = [
-  //   csharp,
-  //   java,
-  //   javascript,
-  //   nodeJS,
-  //   php,
-  //   python,
-  //   react,
-  //   sql,
-  //   swift
-  // ];
+  const codingImages = [
+    'https://daisypictures.s3.us-east-2.amazonaws.com/c_.png',
+    'https://daisypictures.s3.us-east-2.amazonaws.com/java.png',
+    'https://daisypictures.s3.us-east-2.amazonaws.com/javascript.png',
+    'https://daisypictures.s3.us-east-2.amazonaws.com/nodeJS.png',
+    'https://daisypictures.s3.us-east-2.amazonaws.com/php.png',
+    'https://daisypictures.s3.us-east-2.amazonaws.com/python.png',
+    'https://daisypictures.s3.us-east-2.amazonaws.com/react.png',
+    'https://daisypictures.s3.us-east-2.amazonaws.com/sql.png',
+    'https://daisypictures.s3.us-east-2.amazonaws.com/swift.png'
+  ];
 
   useEffect(() => {
     axios.get(url + 'match/' + email).then(res => setMatch(res.data));
@@ -51,7 +51,6 @@ function Results(props) {
   //console.log("User prop: " + props.state.location.user);
 
   const lastClick = () => {
-    console.log('lastClick');
     if (matchNum === matches.length - 1) {
       setMatchNum(matchNum + 1);
       let keptObj = {
@@ -60,7 +59,6 @@ function Results(props) {
       };
       let keptArray = user[0].keep;
       keptArray.push(keptObj);
-      console.log(keptArray);
       axios.put(url + 'match/update/' + email, { keep: keptArray }).then(
         props.history.push({
           pathname: '/dashboard',
@@ -134,13 +132,14 @@ function Results(props) {
                 <Card.Text className="match-content">
                   Both you and {matches[matchNum].name} like these languages..
                   <div className="coding-content-parent">
-                    {matches[matchNum].favoriteCoding.map(code => {
+                    {matches[matchNum].favoriteCoding.slice(0, 3).map(code => {
+                      console.log(code);
                       return (
                         <div className="icon-container-result">
                           <img
                             className="code-lang-icon-result"
-                            // src={codingImages[code.id]}
-                            src={code.image}
+                            src={codingImages[code.id - 1]}
+                            // src={code.image}
                             alt={code.id}
                           ></img>
                         </div>
@@ -193,13 +192,14 @@ function Results(props) {
               <Card.Text className="match-content">
                 Both you and {matches[matchNum].name} like these languages..
                 <div className="coding-content-parent">
-                  {matches[matchNum].favoriteCoding.map(code => {
+                  {matches[matchNum].favoriteCoding.slice(0, 3).map(code => {
+                    console.log(code);
                     return (
                       <div className="icon-container-result">
                         <img
                           className="code-lang-icon-result"
-                          // src={codingImages[code.id]}
-                          src={code.image}
+                          src={codingImages[code.id - 1]}
+                          // src={code.image}
                           alt={code.id}
                         ></img>
                       </div>
