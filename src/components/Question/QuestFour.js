@@ -94,34 +94,6 @@ function QuestFour(props) {
         }
       })
       .catch(console.error);
-
-
-    // props.history.push({
-    //   pathname: '/results',
-    //   state: {
-    //     name: props.location.state.name,
-    //     email: props.location.state.email,
-    //     age: props.location.state.age,
-    //     gender: props.location.state.gender,
-    //     genderInterest: props.location.state.wantGender,
-    //     favoriteActivities: props.location.state.activities,
-    //     favoriteCoding: coding
-    //   }
-    // });
-
-    props.history.push({
-      pathname: '/loading',
-      state: {
-        name: props.location.state.name,
-        email: props.location.state.email,
-        age: props.location.state.age,
-        gender: props.location.state.gender,
-        genderInterest: props.location.state.wantGender,
-        favoriteActivities: props.location.state.activities,
-        favoriteCoding: coding
-      }
-    });
-
   };
   return (
     <div className="question-container">
