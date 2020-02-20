@@ -29,7 +29,9 @@ function SignIn(props) {
       if (user.length !== 0) {
         props.history.push({
           pathname: '/dashboard',
-          state: { user: user }
+          state: {
+            email: inputEmail
+          }
         });
       } else {
         alert('SOMETHING WENT WRONG');
