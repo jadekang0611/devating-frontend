@@ -52,8 +52,6 @@ function Results(props) {
 
   const lastClick = () => {
     console.log('lastClick');
-    console.log(matchNum);
-    console.log(matches.length);
     if (matchNum === matches.length - 1) {
       setMatchNum(matchNum + 1);
       let keptObj = {
