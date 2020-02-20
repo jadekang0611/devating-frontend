@@ -131,7 +131,7 @@ function Dashboard(props) {
                     <Col>
                       <img
                         className="profile-code-lang-icon"
-                        src={codingImages[code.id]}
+                        src={codingImages[code.id - 1]}
                         alt={code.id}
                       ></img>
                     </Col>
@@ -153,7 +153,7 @@ function Dashboard(props) {
                   <div className="profile-icon-container">
                     <img
                       className="profile-code-lang-icon"
-                      src={activityImages[activity.id]}
+                      src={activityImages[activity.id - 1]}
                       alt={activity.id}
                     ></img>
                   </div>
