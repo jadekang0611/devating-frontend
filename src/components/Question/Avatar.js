@@ -28,7 +28,7 @@ function Avatar(props) {
     person6,
     person7,
     person8,
-    person9,
+    person9
   ];
 
   function handleAvatar(e) {
@@ -55,7 +55,7 @@ function Avatar(props) {
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="sign-up-prompt">Select your avatar</h2>
-          <Row>
+          <Row className="avatar-container">
             {profileAvatar.map(avatar => {
               return (
                 <Col className="gender-icon">
