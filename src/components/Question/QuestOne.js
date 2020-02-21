@@ -39,7 +39,7 @@ function QuestOne(props) {
 
   return (
     <div className="question-container">
-      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
+      <img src="/images/devating-landing-logo.svg" className="nav-logo" alt="logo"></img>
       <Form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">Tell us your age</h2>

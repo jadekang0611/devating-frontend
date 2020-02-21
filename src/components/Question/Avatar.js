@@ -51,14 +51,14 @@ function Avatar(props) {
 
   return (
     <div>
-      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
+      <img src="/images/devating-landing-logo.svg" className="nav-logo" alt="logo"></img>
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="sign-up-prompt">Select your avatar</h2>
           <Row className="avatar-container">
             {profileAvatar.map(avatar => {
               return (
-                <Col className="gender-icon">
+                <Col className="gender-icon" key={avatar}>
                   <input
                     type="image"
                     src={avatar}
