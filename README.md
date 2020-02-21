@@ -68,9 +68,9 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 
 ![devating-wireframe](https://user-images.githubusercontent.com/58707118/74559862-53700c80-4f33-11ea-9172-fe1e3ccd1c62.png)
 
-![mobile-mockups](https://files.slack.com/files-pri/T0351JZQ0-FTXJDSE9G/mobile-mock-ups.png)
+![desktop-mockups](https://user-images.githubusercontent.com/58707118/75002876-f0e7a680-5433-11ea-85bb-e59b4afd206d.png)
 
-![desktop-mockups](https://files.slack.com/files-pri/T0351JZQ0-FTXJHJACA/desktop-mockups.png)
+![mobile-mock-ups](https://user-images.githubusercontent.com/58707118/75002878-f0e7a680-5433-11ea-9ba1-fb12f4b19f5a.png)
 
 ## Planning:
 
@@ -120,14 +120,14 @@ We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during dail
 
 ## Usage:
 
-- Click sign up and find your match
+- Click sign in and find your matches in profile
 - OR Click on create account
-- Enter name, email, password then next
-- Choose a avatar, then next
-- Add age & gender, then next
-- Choose gender interest, then next
-- Choose all your favorite activities, then next
-- Choose all your favorite coding languages, then next
+  - Enter name, email, password then next
+  - Choose a avatar, then next
+  - Add age & gender, then next
+  - Choose gender interest, then next
+  - Choose all your favorite activities, then next
+  - Choose all your favorite coding languages, then next
 
 
 ## Testing:
@@ -136,7 +136,7 @@ We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during dail
 - HTML validator - passed
 - CSS validator - passed
 
-## UX Modifications/Hurdles/Unsolved problems:
+## UX Modifications/Hurdles:
 
 **Modifications**
 - Removed User profile picture upload feature
