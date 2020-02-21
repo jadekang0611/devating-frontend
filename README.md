@@ -2,15 +2,17 @@
 
 ## Project Overview
 
-Do you think pair programming can be romantic? YES!! We’re introducing the next generation of pair programming - a new level of connection. Devating is a matching dating app for developers based on their coding preferences, where there are no pair partners left behind. 
+Do you think pair programming can be romantic? YES!! We’re introducing the next generation of pair programming - a new level of connection. Devating is a matching dating app for developers based on their coding preferences, where there are no pair partners left behind.
 
 ## Team Members:
+
 - Scrum Master: Jade Kang (certified)
 - Project Manager: Daisy Yau
 - UI Designer: Sage Kearney
 - QA Engineer: Abdul James
 
 ## Table of Contents:
+
 - [User Stories](https://github.com/jadekang0611/devating-frontend#user-stories)
 - [Wireframes](https://github.com/jadekang0611/devating-frontend#wireframes)
 - [Planning](https://github.com/jadekang0611/devating-frontend#planning)
@@ -26,18 +28,21 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 ## User Stories:
 
 **Our Users:**
+
 - Age: 20 - 50
 - Gender neutral
 - Flirty & fun, yet mature
 - Typically anti-social, keep to themselves
 
 **Why are they using our app?**
-- They want to meet people like them, think the same way, have similar experiences 
+
+- They want to meet people like them, think the same way, have similar experiences
 - Want to destress from a long day of coding
 - Find a new ‘pair partner’
 - Meeting them(our users) where they are- on the computer! -easy access
 
 **How can our app give our users the best experience?**
+
 - They want to feel accepted- don’t feel guilty for being a nerd aka loving coding
 - Mainstreamed/efficient/quick set up
 - Bug free
@@ -45,23 +50,26 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 - #Nostrainonthebrain
 - Image front and center with name, age, job title
 - Mobile: swipe functionality?
-- Browser: buttons (see Jade for button idea later) 
+- Browser: buttons (see Jade for button idea later)
 - Simple, concise summary/profile thingy
 - No strings attached coding
 
 **What are they doing in our app? What is their main activity?**
+
 - Meet someone new with same interests
 - Browsing, looking for a loving (friendly) pair programmer.
 - Reading about other people.
 
 **Ultimate goal**
-- Meet somebody & be completely yourself, guilt free, with that person! No need to hide behind your code :) No commiting out! Build a coding relationship. 
+
+- Meet somebody & be completely yourself, guilt free, with that person! No need to hide behind your code :) No commiting out! Build a coding relationship.
 
 ## Wireframes:
 
 ![devating-wireframe](https://user-images.githubusercontent.com/58707118/74559862-53700c80-4f33-11ea-9172-fe1e3ccd1c62.png)
 
 ## Planning:
+
 We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during daily standup. The board includes project tasks for front-end, back-end, and testing.
 
 **Back-end Model**
@@ -87,30 +95,32 @@ UserSchema: {
 
 ![Devating - Frontend](https://user-images.githubusercontent.com/58707118/74559819-39362e80-4f33-11ea-9caf-c31dbe68c870.jpg)
 
-
 **Bronze version**
+
 - [ ] CRUD
-    - [ ] Create new user account : userController
-    - [ ] Read user matches based on favorite activities and favorite coding language : matchController
-    - [ ] Update user matches to user set : matchController
-    - [ ] Update user information : userController
-    - [ ] Delete match from user set : matchController
-    - [ ] Delete user : userController
+  - [ ] Create new user account : userController
+  - [ ] Read user matches based on favorite activities and favorite coding language : matchController
+  - [ ] Update user matches to user set : matchController
+  - [ ] Update user information : userController
+  - [ ] Delete match from user set : matchController
+  - [ ] Delete user : userController
 - [ ] One Schema
 - [ ] Testing: Jest & Enzyme
 - [ ] Testing: Mocha & Chai
 
 **Silver version**
+
 - [ ] Styling
 - [ ] Additional Schema for User Profile page
 
 **Gold version**
+
 - [ ] User Authentication
 - [ ] User interaction - to be able to see accepted matches on user dashboard
 - [ ] Feature to allow user to have calendar access to book a day for a date
 
-
 ## Technologies:
+
 - React
 - Axios
 - Flexbox/ CSS Grid
@@ -121,17 +131,43 @@ UserSchema: {
 - MongoDB
 - Supertest, Mocha & Chai
 
-
 ## Installation:
+
+- Clone and download this repo
+- In the terminal type npm run start
+- Browser will open on Devating page
 
 ## Usage:
 
 ## Testing:
 
+- passed jest
+- react co
+
 ## UX Modifications/Hurdles/Unsolved problems:
+
+- user profile picture upload we removed
+- uploaded Sage's new mock's
+- no question progress bar
+- removed match card component and placed all inside results component
+- locating conflicting files when doing css
+- Terminal hurdles install conflicts
+- Merging repo to front-end
+- Pairing hurdles when pulling data
 
 ## Future Add-ons:
 
 ## Contribution Guidelines:
 
+- Jade Kang
+- Daisy Yau
+- Sage Kearney
+- Abdul James
+- Google search
+
 ## Credits:
+
+- Pexels images list (sage listed them all here:
+  https://docs.google.com/spreadsheets/d/1Q6_l-M_uLk11OHqn0ldYOhFloz60K8PFe9fYXxz4Jbk/edit?usp=sharing;
+
+- design svg & png by Sage (edited)

@@ -51,7 +51,7 @@
   color: #ffffff !important;
   outline: none !important;
   box-shadow: none !important;
-  border-color:none !important;
+  border-color: none !important;
 }
 
 .question-card-bottom {
@@ -94,23 +94,23 @@
 }
 
 /* new class name for styling on a clicked icon */
-.clicked-icon {
+/* .clicked-icon {
   border-radius: 15px;
   background-color: #730042;
   padding: 10px;
   outline: none;
   opacity: 0.5;
   border: 1px solid #ffffff;
-}
+} */
 
-.question-icon:focus {
+/* .question-icon:focus {
   border-radius: 15px;
   background-color: #730042;
   padding: 10px;
   outline: none;
   opacity: 0.5;
   border: 1px solid #730042;
-}
+} */
 
 .next-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
@@ -127,7 +127,7 @@
   margin-bottom: 64px;
 }
 
-.age-input{
+.age-input {
   width: 30% !important;
   margin: 0 auto !important;
 }
@@ -146,9 +146,14 @@
   margin-top: 56px;
 }
 
-.container{
+.container {
   max-width: 800px !important;
 }
+
+/* .avatar-container {
+  max-width: 400px !important;
+  margin: 0 auto !important;
+} */
 
 @media screen and (max-width: 960px) {
   .gender-icon {

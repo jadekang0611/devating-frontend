@@ -22,7 +22,7 @@ function QuestFour(props) {
   function handleToggle(e) {
     e.preventDefault();
 
-    e.target.style.backgroundColor = 'gray';
+    // e.target.style.backgroundColor = 'gray';
     e.target.style.padding = '16px';
     e.target.style.outline = 'none';
     e.target.style.opacity = '0.4';
