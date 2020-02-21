@@ -18,6 +18,7 @@ function CreateAccount(props) {
 
   return (
     <div className="sign-up-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <img
         className="mb-4 logo-container"
         src="./images/devatinglogo.gif"

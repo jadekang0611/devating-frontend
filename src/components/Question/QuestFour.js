@@ -28,6 +28,7 @@ function QuestFour(props) {
     e.target.style.opacity = '0.4';
     e.target.style.border = '1px solid #ffffff';
 
+
     let arr = favCoding;
     if (arr.includes(e.target.value)) {
       let index = arr.indexOf(e.target.value);
@@ -95,6 +96,7 @@ function QuestFour(props) {
   };
   return (
     <div className="question-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">

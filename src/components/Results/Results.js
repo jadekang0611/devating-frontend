@@ -87,6 +87,10 @@ function Results(props) {
     if (matchNum === matches.length - 1) {
       return (
         <div style={{ width: '24rem' }} className="card-container">
+          <img
+            src="/images/devating-landing-logo.svg"
+            className="nav-logo"
+          ></img>
           <div className="match-container-parent">
             <h3 className="result-question">Take a chance on..</h3>
 
@@ -139,6 +143,10 @@ function Results(props) {
     } else {
       return (
         <div className="match-container-parent">
+          <img
+            src="/images/devating-landing-logo.svg"
+            className="nav-logo"
+          ></img>
           <h3 className="result-question">Take a chance on..</h3>
 
           <Card style={{ width: '24rem' }} className="card-container">

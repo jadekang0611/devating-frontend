@@ -51,6 +51,7 @@ function Avatar(props) {
 
   return (
     <div>
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="sign-up-prompt">Select your avatar</h2>

@@ -7,26 +7,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function About() {
   return (
     <div className="about-container">
-      <h2>We love what we do</h2>
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
+      <h2>Let’s just put it out there- all of us met online.</h2>
       <section>
-        Qui reprehenderit dolore laborum velit deserunt irure est ad ex. Dolore
-        aliqua consectetur aute tempor. Reprehenderit nisi labore reprehenderit
-        qui amet eiusmod minim. Esse aliqua mollit minim proident fugiat aliqua
-        quis proident. In esse incididunt pariatur proident excepteur aliqua
-        deserunt quis occaecat pariatur aliqua culpa veniam aute. Commodo nisi
-        consequat enim voluptate excepteur duis id veniam est enim ullamco
-        aliqua do sunt. Consequat eu pariatur amet officia cillum. Aute mollit
-        proident Lorem do enim exercitation ea nostrud culpa sint. Elit magna
-        nostrud ut ut elit sit ea officia. Commodo incididunt eiusmod enim minim
-        qui duis tempor aliqua tempor cupidatat voluptate. Ad non anim velit
-        esse dolor qui consequat commodo cupidatat nostrud culpa mollit
-        adipisicing qui. Aliquip sint pariatur proident proident id duis
-        exercitation incididunt duis proident elit minim. Ullamco officia ex et
-        proident deserunt incididunt nostrud velit consequat non est deserunt.
-        Ullamco eu minim qui minim velit.
+        With a strike of curiosity, or maybe insanity, all four of us willingly
+        enrolled in a three month long coding bootcamp in the winter of 2019.
+        During this whirlwind of an experience, by chance we were paired
+        together for a group project where we were tasked to build our own MERN
+        app. By that point in our bootcamp, we had come to the realization that
+        developers are their own breed. Their own, nerdy, love to be in front of
+        a computer solving problems, obsessed with computer hardware, probably
+        not the most social kind of breed. C’mon, you know it’s true. If you
+        know this to be true, which you do, then you also know that these nerds
+        are awesome. If you are reading this- you are awesome & we LOVE your
+        nerdyness. And we actually want you to get out there and meet somebody
+        who is just as, or even more, nerdy than you are! We believe everyone
+        deserves the chance to find their lover-grammer (you know like,
+        programmer, except with love.. too cheesy?), so with that focus we stuck
+        our heads together and built Devating just for you. Now get to it! It’s
+        time you got out from behind that computer! Feel free to say hey to us
+        on linkedin or shoot us an email, we’d love to hear from you. Later
+        nerds!
       </section>
       <hr></hr>
-      <h2>Founders</h2>
+      <h2>Meet the developers</h2>
       <CardDeck>
         <Card className="about-card">
           <Card.Img

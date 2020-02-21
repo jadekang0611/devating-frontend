@@ -84,6 +84,7 @@ function Dashboard(props) {
     // console.log(user[0].keep[0].name);
     return (
       <div className="dashboard-container">
+        <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
         <Container className="edit-delete-button-container">
           <Row>
             <button className="name-button" onClick={() => setInput(!input)}>

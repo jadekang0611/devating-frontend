@@ -1,3 +1,10 @@
+.nav-logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 10%;
+}
+
 .question-container {
   color: #ffffff;
   display: flex;
@@ -94,22 +101,28 @@
 }
 
 /* new class name for styling on a clicked icon */
-.clicked-icon {
+/* .clicked-icon {
   border-radius: 15px;
   background-color: #730042;
   padding: 10px;
   outline: none;
   opacity: 0.5;
   border: 1px solid #ffffff;
-}
+} */
 
 .question-icon:focus {
-  border-radius: 15px;
+  /* border-radius: 15px;
   background-color: #730042;
   padding: 10px;
   outline: none;
   opacity: 0.5;
-  border: 1px solid #730042;
+  border: 1px solid #730042; */
+  /* border-radius: 15px; */
+  background-color: gray;
+  padding: 15px;
+  outline: none;
+  opacity: 0.5;
+  border: 1px solid white;
 }
 
 .next-button:hover {

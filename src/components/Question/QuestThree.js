@@ -77,6 +77,7 @@ function QuestThree(props) {
   };
   return (
     <div className="question-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">
