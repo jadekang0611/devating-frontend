@@ -1,5 +1,7 @@
 # Devating : Front-End
 
+https://devating.herokuapp.com/
+
 ## Project Overview
 
 Do you think pair programming can be romantic? YES!! We’re introducing the next generation of pair programming - a new level of connection. Devating is a matching dating app for developers based on their coding preferences, where there are no pair partners left behind. This is the front-end planning and you can view the back-end planning [here](https://github.com/jadekang0611/devating-backend)
@@ -76,7 +78,6 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 
 We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during daily standup. The board includes project tasks for front-end, back-end, and testing.
 
-
 **Front-end Components**
 
 ![Devating - Frontend](https://user-images.githubusercontent.com/58707118/74559819-39362e80-4f33-11ea-9caf-c31dbe68c870.jpg)
@@ -129,7 +130,6 @@ We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during dail
   - Choose all your favorite activities, then next
   - Choose all your favorite coding languages, then next
 
-
 ## Testing:
 
 - Jest & Enzyme - passed
@@ -139,11 +139,13 @@ We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during dail
 ## UX Modifications/Hurdles:
 
 **Modifications**
+
 - Removed User profile picture upload feature
 - Removed question progress bar
 - Removed match card component and placed all inside results component
 
 **Hurdles**
+
 - Locating conflicting files when doing css
 - Terminal dependencies installation conflicts
 - Fetching backend api from frontend
@@ -166,13 +168,13 @@ In addition to collaboratively engineering Devating app, we each had a dedicated
 
 - Sage Kearney- dedicated and skilled UI developer that brought our ideas to life. Led the user storyboard and user interface development with her perfection.
 
-- Abdul James - QA Engineer that debugged/troubleshoot our development environment and involved in all phases of the app creation. 
+- Abdul James - QA Engineer that debugged/troubleshoot our development environment and involved in all phases of the app creation.
 
 ## Credits:
 
 - Sage Kearney: design svgs & pngs. Thank you Sage!!!!
 - Pexels images:
-  - Italo Melo 
+  - Italo Melo
     - https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
     - https://images.pexels.com/photos/2049828/pexels-photo-2049828.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
   - @INSTAGUILHERME
