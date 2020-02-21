@@ -218,7 +218,7 @@ function Dashboard(props) {
                         onClick={onRemove}
                         className="match-card-delete-button"
                       >
-                        Delete
+                        Delete Match
                       </button>
                     </Card>
                   </CardDeck>
