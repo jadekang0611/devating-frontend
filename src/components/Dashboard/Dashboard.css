@@ -10,25 +10,28 @@
   flex-wrap: wrap;
   justify-content: center;
   flex-basis: 100%;
+  border: 1px solid white;
 }
 
 .dash-header {
   display: flex;
   width: 60%;
+  margin: 0 auto;
+  justify-content: center !important;
 }
 
 .name-button {
   /* width: 200px; */
   font-weight: 400;
-  padding: 12px 24px;
-  text-align: center;
+  padding: 0 !important;
+  /* text-align: center; */
   z-index: 1;
-  height: 4.5rem;
-  border-radius: 1rem;
+  height: auto;
+  /* border-radius: 1rem; */
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #e53649;
-  border: 1px solid white;
+  border: transparent;
   background-color: transparent !important;
   display: inline-block;
 }
@@ -79,17 +82,17 @@
 }
 
 .account-delete-button {
+  /* width: 200px; */
   font-weight: 400;
-  font-size:.9rem;
-  padding: 12px 24px;
-  text-align: center;
+  padding: 0 !important;
+  /* text-align: center; */
   z-index: 1;
-  height: 4.5rem;
-  border-radius: 1rem;
+  height: auto;
+  /* border-radius: 1rem; */
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #e53649;
-  border: 1px solid white;
+  border: transparent;
   background-color: transparent !important;
   display: inline-block;
 }
@@ -118,11 +121,12 @@
 }
 
 .info-title {
-  font-size: 32px;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 3rem;
   padding: 1rem;
+  height: auto;
   color: white;
+  border: 1px solid white;
 }
 
 .match-card-delete-button {
@@ -160,23 +164,28 @@
   padding: 6rem 0;
 }
 
-/* .user-profile-info-container {
-  background: #000241;
+.user-profile-info-container {
+  height: auto;
+  border: 1px solid white !important;
+  /* background: #000241;
   opacity: 0.8;
   border-radius: 2rem;
   padding: 2rem;
   color: white;
-  box-shadow: 0 8px 6px -6px black;
-} */
+  box-shadow: 0 8px 6px -6px black; */
+}
 
-/* .coding-language-container {
-  background: #000241;
+
+.coding-language-container {
+  width: 35%;
+  padding-left: 0;
+  /* background: #000241;
   opacity: 0.8;
   border-radius: 2rem;
   padding: 2rem;
   margin-top: 2rem;
-  box-shadow: 0 8px 6px -6px black;
-} */
+  box-shadow: 0 8px 6px -6px black; */
+}
 
 /* .activities-container {
   background: #000241;
@@ -231,7 +240,7 @@ hr {
 .first-vert-hr {
 width: 30px;
 transform: rotate(90deg) !important;
-margin: 10px;
+margin: 10px ;
 }
 
 .card {
@@ -242,4 +251,17 @@ margin: 10px;
 
 .card img{
   border-radius: 0 !important;
+}
+
+
+.fav-info-container {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.vert-hr {
+width: 300px;
+transform: rotate(90deg) !important;
+margin: 10px ;
 }

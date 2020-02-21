@@ -92,10 +92,10 @@ function Dashboard(props) {
               {/* <span className="info-title">Name:</span>{' '} */}
               <span className="info-title">{user[0].name}</span>
             </div>
-            <div className="profile-info">
-              {/* <span className="info-title">Age:</span>{' '}
+            {/* <div className="profile-info"> */}
+            {/* <span className="info-title">Age:</span>{' '}
             <span className="info-title">{user[0].age}</span> */}
-            </div>
+            {/* </div> */}
           </Container>
 
           <Container className="edit-delete-button-container">
@@ -125,53 +125,57 @@ function Dashboard(props) {
           </Container>
         </div>
         <hr />
-        <Container className="coding-language-container">
-          <div className="profile-info">
-            <span className="sub-heading">
-              Your favorite coding languages are..
-            </span>
-          </div>
-          <Row>
-            <div className="profile-icon-container-parent">
-              {user[0].favoriteCoding.map(code => {
-                return (
-                  <div className="profile-icon-container">
-                    <Col>
+
+        <div className="fav-info-container">
+          <Container className="coding-language-container">
+            <div className="profile-info">
+              <span className="sub-heading">
+                Your favorite coding languages are..
+              </span>
+            </div>
+            <Row>
+              <div className="profile-icon-container-parent">
+                {user[0].favoriteCoding.map(code => {
+                  return (
+                    <div className="profile-icon-container">
+                      <Col>
+                        <img
+                          className="profile-code-lang-icon"
+                          src={codingImages[code.id - 1]}
+                          alt={code.id}
+                        ></img>
+                      </Col>
+                    </div>
+                  );
+                })}
+              </div>
+            </Row>
+          </Container>
+          <hr className="vert-hr" />
+          <Container className="activities-container">
+            <div className="profile-info">
+              <span className="sub-heading">
+                Your favorite activities include..
+              </span>
+            </div>
+            <Row>
+              <div className="profile-icon-container-parent">
+                {user[0].favoriteActivities.map(activity => {
+                  return (
+                    <div className="profile-icon-container">
                       <img
                         className="profile-code-lang-icon"
-                        src={codingImages[code.id - 1]}
-                        alt={code.id}
+                        src={activityImages[activity.id - 1]}
+                        alt={activity.id}
                       ></img>
-                    </Col>
-                  </div>
-                );
-              })}
-            </div>
-          </Row>
-        </Container>
-        <hr className="vert-hr" />
-        <Container className="activities-container">
-          <div className="profile-info">
-            <span className="sub-heading">
-              Your favorite activities include..
-            </span>
-          </div>
-          <Row>
-            <div className="profile-icon-container-parent">
-              {user[0].favoriteActivities.map(activity => {
-                return (
-                  <div className="profile-icon-container">
-                    <img
-                      className="profile-code-lang-icon"
-                      src={activityImages[activity.id - 1]}
-                      alt={activity.id}
-                    ></img>
-                  </div>
-                );
-              })}
-            </div>
-          </Row>
-        </Container>
+                    </div>
+                  );
+                })}
+              </div>
+            </Row>
+          </Container>
+        </div>
+
         <hr />
         <Container className="keep-match-container">
           <div className="profile-info">
