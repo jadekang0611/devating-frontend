@@ -68,6 +68,10 @@ Do you think pair programming can be romantic? YES!! We’re introducing the nex
 
 ![devating-wireframe](https://user-images.githubusercontent.com/58707118/74559862-53700c80-4f33-11ea-9172-fe1e3ccd1c62.png)
 
+https://files.slack.com/files-pri/T0351JZQ0-FTXJDSE9G/mobile-mock-ups.png
+
+https://files.slack.com/files-pri/T0351JZQ0-FTXJHJACA/desktop-mockups.png
+
 ## Planning:
 
 We review our [Trello Board](https://trello.com/b/K0hAl5co/devating) during daily standup. The board includes project tasks for front-end, back-end, and testing.
@@ -139,10 +143,19 @@ UserSchema: {
 
 ## Usage:
 
+- Click on create account
+- Enter name, email, password then next
+- Choose a avatar, then next
+- Add age & gender, then next
+- Choose gender interest, then next
+- Choose all your favorite activities, then next
+- Choose all your favorite coding languages, then next
+- Click sign up and find your match
+
 ## Testing:
 
 - passed jest
-- react co
+- react component test
 
 ## UX Modifications/Hurdles/Unsolved problems:
 
@@ -156,6 +169,10 @@ UserSchema: {
 - Pairing hurdles when pulling data
 
 ## Future Add-ons:
+
+- User creating new account to be able to upload an image
+- Chat capable
+- Feature to allow user to have calendar access to book for a date
 
 ## Contribution Guidelines:
 
