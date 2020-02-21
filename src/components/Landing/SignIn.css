@@ -1,3 +1,10 @@
+.nav-logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 10%;
+}
+
 body {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -7,6 +14,7 @@ body {
 }
 
 .sign-in-container {
+  margin-top: 50px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -15,35 +23,39 @@ body {
 
 .sign-in-prompt {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 16px;
+  font-size: 2rem;
+  font-weight: 400 !important;
+  margin-bottom: 50px;
+  margin-top: 20px !important;
 }
 
 .sign-in-form {
   margin: auto;
+  width: 350px;
+  max-width: 80%;
 }
 
 .sign-in-button {
   width: 100%;
+  height: 3.5rem;
+  border-radius: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: white;
   font-size: 16px;
-  font-weight: 700;
-  background-color: #ffffff;
-  color: #410042;
-  border: none;
-  border-radius: 32px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 1px solid white;
   padding-top: 8px;
   padding-bottom: 8px;
-  -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
 .sign-in-button:hover {
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.sign-in-button:focus {
+/* .sign-in-button:focus {
   width: 100%;
   font-size: 16px;
   font-weight: 700;
@@ -54,7 +66,7 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   outline: none;
-}
+} */
 
 .form-control {
   background-color: transparent !important;
@@ -66,4 +78,7 @@ body {
   background-color: transparent !important;
   color: #ffffff !important;
   outline: none;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color:none !important;
 }

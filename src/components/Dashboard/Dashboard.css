@@ -1,0 +1,245 @@
+.nav-logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 10%;
+}
+
+.edit-delete-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+.dash-header {
+  display: flex;
+  width: 60%;
+}
+
+.name-button {
+  /* width: 200px; */
+  font-weight: 400;
+  padding: 12px 24px;
+  text-align: center;
+  z-index: 1;
+  height: 4.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #e53649;
+  border: 1px solid white;
+  background-color: transparent !important;
+  display: inline-block;
+}
+
+.name-button:focus {
+  outline: none !important;
+}
+
+.name-update-input {
+  width: 150px;
+  font-weight: 600;
+  margin-left: 24px;
+  padding: 12px 24px;
+  height: 4.5rem;
+  text-align: center;
+  z-index: 1;
+  border-radius: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000241;
+  border: 0.15rem solid #410042;
+  background-color: rgba(255, 255, 255, 0.701);
+}
+
+.name-update-input:focus {
+  outline: none !important;
+}
+
+.name-save-button {
+  width: 100px;
+  font-weight: 600;
+  margin-left: 24px;
+  top: 100px;
+  padding: 12px 24px;
+  height: 4.5rem;
+  text-align: center;
+  z-index: 1;
+  border-radius: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000241;
+  border: 0.15rem solid #410042;
+  background-color: rgba(255, 255, 255, 0.701);
+}
+
+.name-save-button:focus {
+  outline: none !important;
+}
+
+.account-delete-button {
+  font-weight: 400;
+  font-size:.9rem;
+  padding: 12px 24px;
+  text-align: center;
+  z-index: 1;
+  height: 4.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #e53649;
+  border: 1px solid white;
+  background-color: transparent !important;
+  display: inline-block;
+}
+
+.account-delete-button:focus {
+  outline: none !important;
+}
+
+.profile-icon-container-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.profile-icon-container {
+  /* background: #730042; */
+  margin: 1.5rem .3rem;
+  /* border-radius: 16px; */
+  /* box-shadow: 0 8px 6px -6px black; */
+}
+.profile-code-lang-icon {
+  padding: 0.5rem;
+  width: 50px;
+  height: auto;
+  /* margin: 0 auto; */
+}
+
+.info-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+}
+
+.match-card-delete-button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  color: #e53649;
+  font-weight: 400;
+  transition: opacity 0.35s ease;
+}
+.match-card-delete-button:hover {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #e53649;
+  font-weight: 800;
+}
+
+/* .match-card-delete-button:focus {
+  border: 0.15rem solid #f75301;
+  background-color: #f82206fd;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000241;
+  font-weight: 600;
+  outline: none !important;
+} */
+
+.dashboard-container {
+  /* margin-bottom: 72px; */
+  background-color: #000241;
+  padding: 6rem 0;
+}
+
+/* .user-profile-info-container {
+  background: #000241;
+  opacity: 0.8;
+  border-radius: 2rem;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 8px 6px -6px black;
+} */
+
+/* .coding-language-container {
+  background: #000241;
+  opacity: 0.8;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 8px 6px -6px black;
+} */
+
+/* .activities-container {
+  background: #000241;
+  opacity: 0.8;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 8px 6px -6px black;
+} */
+
+/* .activities-container {
+  background: #000241;
+  opacity: 0.8;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 8px 6px -6px black;
+} */
+
+/* .keep-match-container {
+  background: #000241;
+  opacity: 0.8;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 8px 6px -6px black;
+} */
+
+.sub-heading {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+/* .info-title {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+} */
+
+.profile-content {
+  font-size: 20px;
+}
+
+
+hr {
+ width: 60%;
+ color:white;
+}
+
+.first-vert-hr {
+width: 30px;
+transform: rotate(90deg) !important;
+margin: 10px;
+}
+
+.card {
+  border-radius: 0 !important;
+  border: none;
+  background-color:transparent !important;
+}
+
+.card img{
+  border-radius: 0 !important;
+}

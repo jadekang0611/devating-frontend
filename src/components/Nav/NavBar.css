@@ -10,10 +10,18 @@
 
 .nav-item {
   text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.nav-item a {
+  font-size: 1.3rem;
 }
 
 .items {
   margin: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
 }
 .navbar-light .navbar-nav {
   color: #ffffff;

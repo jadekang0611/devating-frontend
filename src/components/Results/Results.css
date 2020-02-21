@@ -1,0 +1,136 @@
+.nav-logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 10%;
+}
+
+.match-container-parent {
+  margin-bottom: 80px;
+}
+.result-question {
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.match-name-age {
+  font-size: 2rem;
+}
+
+.card-container {
+  margin: 0 auto;
+  text-align: center;
+  /* border: 1px solid white; */
+  flex: 1 0 auto;
+  /* width: 500px; */
+  height: auto;
+  border-radius: 16px !important;
+}
+
+.profile-picture {
+  border-radius: 16px !important;
+}
+
+.match-info {
+  text-align: left;
+  color: #730042;
+  font-size: 32px !important;
+  font-weight: 500 !important;
+}
+
+.match-content {
+  text-align: justify;
+  font-size: 20px !important;
+}
+.coding-content-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.icon-container-result {
+  background: #661479;
+  margin: 1.5rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 6px -6px black;
+}
+.code-lang-icon-result {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 62%;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.image-container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.image-container:hover {
+  top: 90px;
+}
+
+.match-button1 {
+  position: absolute;
+  align-items: center;
+  left: 10px;
+  top: 240px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.match-button2 {
+  position: absolute;
+  align-items: center;
+  right: 10px;
+  top: 240px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.match-button1 {
+  width: 140px;
+  padding: 12px 24px;
+  text-align: center;
+  z-index: 1;
+  height: 3.5rem;
+  border-radius: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000241;
+  border: 0.15rem solid #410042;
+  background-color: rgba(255, 255, 255, 0.701);
+}
+.match-button2 {
+  width: 140px;
+  padding: 12px 24px;
+  text-align: center;
+  z-index: 1;
+  height: 3.5rem;
+  border-radius: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000241;
+  border: 0.15rem solid #410042;
+  background-color: rgba(255, 255, 255, 0.701);
+}
+
+.image-container:hover .match-button1 {
+  opacity: 1;
+}
+
+.image-container:hover .match-button2 {
+  opacity: 1;
+}

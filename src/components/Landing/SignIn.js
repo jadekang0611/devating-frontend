@@ -24,12 +24,14 @@ function SignIn(props) {
   function handleSignIn(e) {
     e.preventDefault();
 
-    axios.get(url + '/' + inputEmail + '/' + inputPassword).then(res => {
+    axios.get(url + '/' + inputEmail /*+ '/' + inputPassword*/ ).then(res => {
       let user = res.data;
       if (user.length !== 0) {
         props.history.push({
           pathname: '/dashboard',
-          state: { user: user }
+          state: {
+            email: inputEmail
+          }
         });
       } else {
         alert('SOMETHING WENT WRONG');
@@ -37,16 +39,17 @@ function SignIn(props) {
     });
   }
 
-  const url = 'http://localhost:7000/signin';
+  const url = 'https://devating-backend.herokuapp.com/match';
 
   return (
     <div className="sign-in-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <img
-        className="mb-4"
-        src="./images/logo3.png"
+        className="mb-4 logo-container"
+        src="./images/devatinglogo.gif"
         alt="devating"
-        width="150"
-        height="150"
+        width="120"
+        height="120"
       />
       <h2 className="sign-in-prompt">Please sign in</h2>
       <Form className="sign-in-form">

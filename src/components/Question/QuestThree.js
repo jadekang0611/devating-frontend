@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import cooking from '../../icons/cooking.svg';
 import gaming from '../../icons/gaming.svg';
 import skiing from '../../icons/skiing.svg';
@@ -13,7 +12,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function QuestThree(props) {
-  //const [favActivities, setFavActivities] = useState([]);
   let favActivities = [];
   let activities = [];
 
@@ -26,17 +24,13 @@ function QuestThree(props) {
 
   function handleToggle(e) {
     e.preventDefault();
-    console.log(e.target);
 
-    e.target.style.backgroundColor = 'gray';
+    // e.target.style.backgroundColor = 'none';
+    e.target.style.borderRadius = '0';
     e.target.style.padding = '16px';
     e.target.style.outline = 'none';
     e.target.style.opacity = '0.4';
     e.target.style.border = '1px solid #ffffff';
-
-    // let obj = {
-    //   id: e.target.value
-    // };
 
     let arr = favActivities;
     if (arr.includes(e.target.value)) {
@@ -47,26 +41,8 @@ function QuestThree(props) {
     } else {
       arr.push(e.target.value);
     }
-    //arr.push(e.target.value);
-
-    //   const uniqueSet = new Set(arr);
-    //   const unique = [...uniqueSet];
-
-    //   console.log("Unique : " + JSON.stringify(unique));
 
     favActivities = arr;
-    // TODO: add code to toggle image class on/off
-    console.log('fav ' + favActivities);
-
-    // if(e.target.value === 1){
-    //   changeCookingClicked(true);
-    // } else if (e.target.value === 2){
-    //   changeGamingClicked(true);
-    // } else if (e.target.value === 3) {
-    //   changeSkiingClicked(true);
-    // }
-
-    // reset();
   }
 
   let inputClassCooking = cookingClicked ? 'clicked-icon' : 'question-icon';
@@ -76,11 +52,6 @@ function QuestThree(props) {
   let inputClassTrekking = trekkingClicked ? 'clicked-icon' : 'question-icon';
   let inputClassRunning = runningClicked ? 'clicked-icon' : 'question-icon';
 
-  // function reset(){
-  //   // if the value of the icon doesn't match the value of the clicked icon(e),
-
-  // }
-
   const handleSubmit = el => {
     el.preventDefault();
     for (let i = 0; i < favActivities.length; i++) {
@@ -89,11 +60,11 @@ function QuestThree(props) {
       };
       activities.push(obj);
     }
-    console.log('Final array: ' + JSON.stringify(activities));
 
     props.history.push({
       pathname: '/question/4',
       state: {
+        avatar: props.location.state.avatar,
         name: props.location.state.name,
         email: props.location.state.email,
         password: props.location.state.password,
@@ -106,10 +77,13 @@ function QuestThree(props) {
   };
   return (
     <div className="question-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">
-            Select some of your favorite activities
+            Select some of
+            <br></br>
+            your favorite activities
           </h2>
           <Row>
             <Col className="activitiesIcon">

@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
-
-body {
-  background: url('/images/desktop-background-devating.svg') no-repeat center
-    center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.nav-logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 10%;
 }
 
 .card-footer {
@@ -14,42 +10,57 @@ body {
   align-items: center; */
   margin: 0 auto;
   background: none !important;
-  
 }
 
 .font-awesome {
-  color:#000241;
-  font-size: 1.5rem;
+  color: #000241;
+  font-size: 2rem;
   margin: 0 1rem;
 }
 
 .about-container {
-  padding: 5rem 15rem;
-  /* color: white; */
+  padding: 7rem 6rem 7rem 6rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px;
+  background: #000241;
 }
 
-h2, section {
+h2,
+section {
   color: white;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .card {
   margin: 2rem;
 }
 
-
 h2 {
+  font-size: 2.5rem !important;
   font-weight: 800 !important;
-  margin-top: 3rem !important;
+  margin: 1.5rem 0 !important;
 }
 
 section {
   margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 3rem !important;
+  margin-bottom: 5rem !important;
   border: 0;
-  border-top: .5px solid white !important;
+  border-top: 0.5px solid white !important;
+}
+
+.bio-title {
+  font-size: 24px;
+  font-weight: 700 !;
+}
+
+.about-card {
+  /* border-radius: 3rem !important; */
+}
+
+.about-card-image {
+  /* border-radius: 3rem !important; */
 }

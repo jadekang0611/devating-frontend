@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import maleIcon from '../../icons/male.svg';
 import femaleIcon from '../../icons/female.svg';
@@ -10,23 +9,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function QuestOne(props) {
-  console.log('Hit page QuestionOne');
   const [userAge, setUserAge] = useState('');
   const [userGender, setUserGender] = useState('');
-  // const [submit, setSubmit] = useState('');
 
   function handleAgeChange(e) {
     e.preventDefault();
     setUserAge(e.target.value);
-    console.log(e.target.value);
   }
 
   function handleGender(e) {
     e.preventDefault();
     setUserGender(e.target.value);
-
-    console.log(e.target.value);
-    console.log(props.location.state.name);
   }
 
   const handleSubmit = el => {
@@ -34,6 +27,7 @@ function QuestOne(props) {
     props.history.push({
       pathname: '/question/2',
       state: {
+        avatar: props.location.state.avatar,
         name: props.location.state.name,
         email: props.location.state.email,
         password: props.location.state.password,
@@ -45,6 +39,7 @@ function QuestOne(props) {
 
   return (
     <div className="question-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <Form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">Tell us your age</h2>
@@ -57,7 +52,7 @@ function QuestOne(props) {
                   id="age"
                   value={userAge}
                   onChange={handleAgeChange}
-                  className="question-input"
+                  className="question-input age-input"
                 />
               </Form.Group>
             </Col>
@@ -65,7 +60,7 @@ function QuestOne(props) {
           <div className="separate-div"></div>
           <h2 className="question-prompt">Select your gender</h2>
           <Row>
-            <Col>
+            <Col className="gender-icon">
               <input
                 type="image"
                 src={femaleIcon}
@@ -77,7 +72,7 @@ function QuestOne(props) {
                 onClick={handleGender}
               />
             </Col>
-            <Col>
+            <Col className="gender-icon">
               <input
                 type="image"
                 src={maleIcon}

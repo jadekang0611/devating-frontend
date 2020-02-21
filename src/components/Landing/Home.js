@@ -3,34 +3,47 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import './Home.css';
 
 function Home() {
   return (
     <>
       <Container>
         <Row>
-          <Col>
-            <h2 className="landing-content">
-              Sint adipisicing magna amet minim magna et pariatur officia id
-              Lorem velit. Qui do est adipisicing laborum irure deserunt
-              incididunt.
-            </h2>
+          <Col className="home-logo">
+            <img
+              src="./images/devating-landing-logo.svg"
+              alt="our logo"
+              className="landing-content"
+            ></img>
           </Col>
         </Row>
       </Container>
       <Container className="landing-button-container text-center">
-        <Row>
+        <Row className="home-intro">
           <Col>
-            <button className="create-button-landing ">
-              <Link to="/createAccount">Create a new account</Link>
-            </button>
+            <h3 className="intro-content">
+              Stop feeling guilty for loving coding. <br></br>Find romance from pair
+              programming
+            </h3>
           </Col>
         </Row>
         <Row>
           <Col>
-            <button className="sign-in-button-landing">
-              <Link to="/signin">Sign In</Link>
-            </button>
+            <Link to="/createAccount">
+              <button className="create-button-landing landing-button">
+                create account
+              </button>
+            </Link>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Link to="/signin">
+              <button className="sign-in-button-landing landing-button">
+                Sign In
+              </button>
+            </Link>
           </Col>
         </Row>
       </Container>

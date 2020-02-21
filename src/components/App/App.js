@@ -4,8 +4,7 @@ import SignIn from '../Landing/SignIn';
 import CreateAccount from '../Landing/CreateAccount';
 import About from '../About/About';
 import Dashboard from '../Dashboard/Dashboard';
-import Loading from '../Loading/Loading';
-import MatchCard from '../MatchCard/MatchCard';
+// import Loading from '../Loading/Loading';
 import Question from '../Question/Question';
 import Results from '../Results/Results';
 import Home from '../Landing/Home';
@@ -13,7 +12,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faMars , faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 library.add(faMars, fab, faEnvelope);
 
 function App() {
@@ -28,8 +27,8 @@ function App() {
             <Route path="/createAccount" component={CreateAccount} />
             <Route exact path="/about" component={About} />
             <Route exact path="/dashboard" component={Dashboard} />
-            <Route exact path="/loading" component={Loading} />
             <Route path="/question" component={Question} />
+            {/* <Route exact path="/loading" component={Loading} /> */}
             <Route exact path="/results" component={Results} />
           </Switch>
         </main>

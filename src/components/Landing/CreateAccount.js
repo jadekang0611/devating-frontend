@@ -11,21 +11,22 @@ function CreateAccount(props) {
   const handleSubmit = e => {
     e.preventDefault();
     props.history.push({
-      pathname: '/question/1',
+      pathname: '/question/avatar',
       state: { name: name, email: email, password: password }
     });
   };
 
   return (
     <div className="sign-up-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <img
-        className="mb-4"
-        src="./images/logo3.png"
+        className="mb-4 logo-container"
+        src="./images/devatinglogo.gif"
         alt="devating"
-        width="150"
-        height="150"
+        width="120"
+        height="120"
       />
-      <h2 className="sign-up-prompt">Create a new account</h2>
+      <h2 className="sign-up-prompt">Let's get started</h2>
       <Form className="sign-up-form " onSubmit={handleSubmit}>
         <Form.Group className="input-field">
           <Form.Control
@@ -35,9 +36,9 @@ function CreateAccount(props) {
             onChange={e => setName(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlID="formGroupEmail" className="input-field">
+        <Form.Group className="input-field">
           <Form.Control
-            type="text"
+            type="email"
             value={email}
             placeholder="dev@devating.com"
             onChange={e => setEmail(e.target.value)}
@@ -45,7 +46,7 @@ function CreateAccount(props) {
         </Form.Group>
         <Form.Group controlID="formGroupEmail" className="input-field">
           <Form.Control
-            type="text"
+            type="password"
             value={password}
             placeholder="love1234"
             onChange={e => setPassword(e.target.value)}

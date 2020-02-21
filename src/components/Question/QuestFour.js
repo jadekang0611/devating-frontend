@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import csharp from '../../icons/csharp.svg';
 import java from '../../icons/java.svg';
@@ -23,11 +22,12 @@ function QuestFour(props) {
   function handleToggle(e) {
     e.preventDefault();
 
-    e.target.style.backgroundColor = 'gray';
+    // e.target.style.backgroundColor = 'gray';
     e.target.style.padding = '16px';
     e.target.style.outline = 'none';
     e.target.style.opacity = '0.4';
     e.target.style.border = '1px solid #ffffff';
+
 
     let arr = favCoding;
     if (arr.includes(e.target.value)) {
@@ -40,13 +40,11 @@ function QuestFour(props) {
     }
 
     favCoding = arr;
-    // TODO: add code to toggle image class on/off
-    console.log('fav ' + favCoding);
   }
 
   const handleSubmit = el => {
     el.preventDefault();
-    const url = 'http://localhost:7000/signup';
+    const url = 'https://devating-backend.herokuapp.com/signup';
 
     for (let i = 0; i < favCoding.length; i++) {
       let obj = {
@@ -54,11 +52,12 @@ function QuestFour(props) {
       };
       coding.push(obj);
     }
-    console.log('Final array: ' + JSON.stringify(coding));
+
     // TODO: Call API and create user. If user creates successfully, then go to the results page. Otherwise, display error message.
     // TODO: MAKE SURE that the object that we build to send to the API is formatted exactly the same as the object that the API accepts - otherwise, we will not have the proper data in our database.
 
     const newUser = {
+      image: props.location.state.avatar,
       name: props.location.state.name,
       email: props.location.state.email,
       age: props.location.state.age,
@@ -68,32 +67,42 @@ function QuestFour(props) {
       favoriteActivities: props.location.state.activities,
       favoriteCoding: coding
     };
-    console.log(JSON.stringify(newUser));
+
     setUserData(newUser);
     axios
       .post(url, newUser)
-      .then(res => {})
+      .then(res => {
+        let user = res.data;
+        if (user.length !== 0) {
+          props.history.push({
+            pathname: '/results',
+            state: {
+              image: props.location.state.avatar,
+              name: props.location.state.name,
+              email: props.location.state.email,
+              age: props.location.state.age,
+              gender: props.location.state.gender,
+              genderInterest: props.location.state.wantGender,
+              favoriteActivities: props.location.state.activities,
+              favoriteCoding: coding,
+              user: user
+            }
+          });
+        } else {
+          alert('SOMETHING WENT WRONG');
+        }
+      })
       .catch(console.error);
-
-    props.history.push({
-      pathname: '/results',
-      state: {
-        name: props.location.state.name,
-        email: props.location.state.email,
-        age: props.location.state.age,
-        gender: props.location.state.gender,
-        genderInterest: props.location.state.wantGender,
-        favoriteActivities: props.location.state.activities,
-        favoriteCoding: coding
-      }
-    });
   };
   return (
     <div className="question-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">
-            Select some of your favorite activities
+            Select some of your
+            <br></br>
+            favorite coding languages
           </h2>
           <Row>
             <Col className="codingIcon">

@@ -13,7 +13,6 @@ function QuestTwo(props) {
   function handleWantGender(e) {
     e.preventDefault();
     setWantGender(e.target.value);
-    console.log(e.target.value);
   }
 
   const handleSubmit = el => {
@@ -21,6 +20,7 @@ function QuestTwo(props) {
     props.history.push({
       pathname: '/question/3',
       state: {
+        avatar: props.location.state.avatar,
         name: props.location.state.name,
         email: props.location.state.email,
         password: props.location.state.password,
@@ -33,6 +33,7 @@ function QuestTwo(props) {
 
   return (
     <div className="question-container">
+      <img src="/images/devating-landing-logo.svg" className="nav-logo"></img>
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="question-prompt">Select a gender of your interest</h2>
@@ -49,7 +50,7 @@ function QuestTwo(props) {
                 onClick={handleWantGender}
               />
             </Col>
-            <Col>
+            <Col className="gender-icon">
               <input
                 type="image"
                 src={maleIcon}
