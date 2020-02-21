@@ -1,6 +1,8 @@
 # Devating : Front-End
 
-https://devating.herokuapp.com/
+![devating-logo (2)](https://user-images.githubusercontent.com/56938630/75009160-d19a4a80-542e-11ea-9737-c7e3532f36ef.png)
+
+[To our application](https://devating.herokuapp.com/)
 
 ## Project Overview
 
