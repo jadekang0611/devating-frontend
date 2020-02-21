@@ -51,7 +51,7 @@ function QuestOne(props) {
                   id="age"
                   value={userAge}
                   onChange={handleAgeChange}
-                  className="question-input"
+                  className="question-input age-input"
                 />
               </Form.Group>
             </Col>

@@ -19,22 +19,26 @@
 }
 
 .sign-up-button {
-  width: 100%;
+  text-align: center;
+  width: 32%;
   font-size: 16px;
-  font-weight: 600 !important;
-  background-color: #ffffff;
-  color: #410042;
-  border: none;
+  font-weight: 700;
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid #ffffff;
   border-radius: 32px;
   padding-top: 8px;
   padding-bottom: 8px;
+  margin-bottom: 32px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
+.sign-up-button:hover {
+  background-color: rgba(255,255,255, .3) !important;
+}
 .sign-up-button:focus {
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  color: white;
-  outline: none;
+border: 1px solid white;
 }
 
 .form-control {
@@ -46,6 +50,9 @@
 .form-control:focus {
   background-color: transparent !important;
   color: #ffffff !important;
+  outline: none !important;
+  box-shadow: white !important;
+  border-color: white !important;
 }
 
 .logo-container {

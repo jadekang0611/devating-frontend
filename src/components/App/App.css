@@ -1,5 +1,5 @@
 body {
-  background: url('/images/desktop-background-devating.svg') no-repeat center
+  background: url('/images/Asset _4.svg') no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,12 +7,25 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
+} 
+
+@media (max-width: 800px){
+body {
+  background: url('/images/mobile-background.svg') no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+} 
 }
 
 .content {
   min-height: 100vh; /* will cover the 100% of viewport */
   flex: 1 0 auto;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .create-button-landing {
@@ -59,20 +72,7 @@ body {
   color: white;
 }
 
-.landing-content {
-  padding-top: 40px;
-  letter-spacing: 0.1em;
-  font-size: 30px;
-  line-height: 2;
-  color: #ffffff;
-  font-weight: 500;
-}
 
-.landing-button-container {
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-}
 
 footer {
   font-family: 'Montserrat Alternates', sans-serif;

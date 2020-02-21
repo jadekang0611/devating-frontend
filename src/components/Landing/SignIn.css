@@ -30,28 +30,25 @@ body {
 
 .sign-in-button {
   width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 40px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
   height: 3.5rem;
+  border-radius: 40px;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  color: #000241;
-  background-color: rgba(255, 255, 255, 0.701);
-  border: 0.15rem solid white;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 1px solid white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition-duration: 0.4s;
 }
 
 .sign-in-button:hover {
-  border: 1px solid #ffffff;
-  background-color: white;
-  color: #000241;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.sign-in-button:focus {
+/* .sign-in-button:focus {
   width: 100%;
   font-size: 16px;
   font-weight: 700;
@@ -62,7 +59,7 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   outline: none;
-}
+} */
 
 .form-control {
   background-color: transparent !important;
@@ -74,4 +71,7 @@ body {
   background-color: transparent !important;
   color: #ffffff !important;
   outline: none;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color:none !important;
 }

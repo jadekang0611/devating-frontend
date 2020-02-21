@@ -25,10 +25,11 @@ function QuestThree(props) {
   function handleToggle(e) {
     e.preventDefault();
 
-    e.target.style.backgroundColor = 'gray';
+    // e.target.style.backgroundColor = 'none';
+    e.target.style.borderRadius = '0';
     e.target.style.padding = '16px';
     e.target.style.outline = 'none';
-    e.target.style.opacity = '0.4';
+    // e.target.style.opacity = '0.4';
     e.target.style.border = '1px solid #ffffff';
 
     let arr = favActivities;

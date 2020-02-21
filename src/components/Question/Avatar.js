@@ -15,7 +15,6 @@ import person6 from '../../avatar/006-woman.svg';
 import person7 from '../../avatar/007-man.svg';
 import person8 from '../../avatar/008-woman.svg';
 import person9 from '../../avatar/009-man.svg';
-import person10 from '../../avatar/010-woman.svg';
 
 function Avatar(props) {
   const [avatar, setAvatar] = useState('');
@@ -30,7 +29,6 @@ function Avatar(props) {
     person7,
     person8,
     person9,
-    person10
   ];
 
   function handleAvatar(e) {
@@ -55,8 +53,7 @@ function Avatar(props) {
     <div>
       <form onSubmit={handleSubmit}>
         <Container>
-          <h2 className="sign-up-prompt">Let's get started</h2>
-          <p>Select your avatar</p>
+          <h2 className="sign-up-prompt">Select your avatar</h2>
           <Row>
             {profileAvatar.map(avatar => {
               return (

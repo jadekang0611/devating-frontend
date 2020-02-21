@@ -23,23 +23,27 @@ function Home() {
         <Row className="home-intro">
           <Col>
             <h3 className="intro-content">
-              Stop feeling guilty for loving coding. Find romance from pair
+              Stop feeling guilty for loving coding. <br></br>Find romance from pair
               programming
             </h3>
           </Col>
         </Row>
         <Row>
           <Col>
-            <button className="create-button-landing">
-              <Link to="/createAccount">Create account</Link>
-            </button>
+            <Link to="/createAccount">
+              <button className="create-button-landing landing-button">
+                create account
+              </button>
+            </Link>
           </Col>
         </Row>
         <Row>
           <Col>
-            <button className="sign-in-button-landing">
-              <Link to="/signin">Sign In</Link>
-            </button>
+            <Link to="/signin">
+              <button className="sign-in-button-landing landing-button">
+                Sign In
+              </button>
+            </Link>
           </Col>
         </Row>
       </Container>

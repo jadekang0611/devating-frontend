@@ -24,17 +24,18 @@
   border-radius: 40px;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  color: #000241;
+  color: white;
   font-size: 16px;
   font-weight: 400;
-  background-color: rgba(255, 255, 255, 0.701);
-  border: 0.15rem solid white;
+  background-color: transparent;
+  border: 1px solid white;
   padding-top: 8px;
   padding-bottom: 8px;
+  transition-duration: 0.4s;
 }
 
 .sign-up-button:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .form-control {
@@ -48,6 +49,9 @@
 .form-control:focus {
   background-color: transparent !important;
   color: #ffffff !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color:none !important;
 }
 
 .question-card-bottom {
@@ -65,18 +69,16 @@
 .next-button {
   width: 100%;
   height: 3.5rem;
-  margin-bottom: 64px;
   border-radius: 40px;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  color: #000241;
+  color: white;
   font-size: 16px;
   font-weight: 400;
-  background-color: rgba(255, 255, 255, 0.701);
-  border: 0.15rem solid white;
+  background-color: transparent;
+  border: 1px solid white;
   padding-top: 8px;
   padding-bottom: 8px;
-  -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
@@ -111,7 +113,7 @@
 }
 
 .next-button:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .next-button:focus {
@@ -123,6 +125,11 @@
 
 .separate-div {
   margin-bottom: 64px;
+}
+
+.age-input{
+  width: 30% !important;
+  margin: 0 auto !important;
 }
 
 .question-input {
@@ -137,6 +144,10 @@
 
 #question-three-button {
   margin-top: 56px;
+}
+
+.container{
+  max-width: 800px !important;
 }
 
 @media screen and (max-width: 960px) {
