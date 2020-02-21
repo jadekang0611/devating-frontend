@@ -34,6 +34,10 @@
   border-radius: 16px !important;
 }
 
+.results-match-info {
+  color: #000241 !important;
+}
+
 .match-info {
   text-align: left;
   color: #730042;

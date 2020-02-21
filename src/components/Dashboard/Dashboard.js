@@ -80,7 +80,6 @@ function Dashboard(props) {
   };
 
   if (user.length > 0) {
-    console.log(user);
     //console.log(user[0].keep);
     // console.log(user[0].keep[0].name);
     return (

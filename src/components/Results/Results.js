@@ -89,7 +89,7 @@ function Results(props) {
         <div style={{ width: '24rem' }} className="card-container">
           <img
             src="/images/devating-landing-logo.svg"
-            className="nav-logo"
+            className="nav-logo" alt="logo"
           ></img>
           <div className="match-container-parent">
             <h3 className="result-question">Take a chance on..</h3>
@@ -113,7 +113,7 @@ function Results(props) {
                 </div>
               </div>
               <Card.Body>
-                <Card.Title className=" match-info match-name-age">
+                <Card.Title className="match-info match-name-age results-match-info">
                   {matches[matchNum].name}, {matches[matchNum].age}
                 </Card.Title>
 
@@ -145,7 +145,7 @@ function Results(props) {
         <div className="match-container-parent">
           <img
             src="/images/devating-landing-logo.svg"
-            className="nav-logo"
+            className="nav-logo" alt="logo"
           ></img>
           <h3 className="result-question">Take a chance on..</h3>
 
@@ -177,7 +177,7 @@ function Results(props) {
               </div>
             </div>
             <Card.Body>
-              <Card.Title className=" match-info match-name-age">
+              <Card.Title className="match-info match-name-age results-match-info">
                 {matches[matchNum].name}, {matches[matchNum].age}
               </Card.Title>
 
