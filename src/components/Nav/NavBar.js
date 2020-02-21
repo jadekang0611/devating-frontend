@@ -12,7 +12,7 @@ function NavBar() {
         aria-controls="responsive-navbar-nav"
         className="navbar-toggler-right"
       />
-
+      
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Link className="nav-item">
