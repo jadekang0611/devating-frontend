@@ -1,3 +1,6 @@
+/* My general comment which applies to all your CSS files is to style using class selectors rather
+than tag selectors. Here are some reasons why: https://frontstuff.io/you-need-to-stop-targeting-tags-in-css */
+
 .nav-logo {
   position: absolute;
   top: 16px;
@@ -9,6 +12,8 @@
   /* display: flex;
   align-items: center; */
   margin: 0 auto;
+  /* This comment applies in general to all your CSS: !important is considered anti-pattern since
+  it can really mess up your CSS over time. Try to remove them from your CSS files. */
   background: none !important;
 }
 
@@ -57,6 +62,7 @@ hr {
   font-weight: 700;
 }
 
+/* Another general comment is that any unused code (whether it's CSS, HTML, JS) should be deleted */
 .about-card {
   /* border-radius: 3rem !important; */
 }

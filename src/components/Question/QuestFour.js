@@ -28,7 +28,6 @@ function QuestFour(props) {
     e.target.style.opacity = '0.4';
     e.target.style.border = '1px solid #ffffff';
 
-
     let arr = favCoding;
     if (arr.includes(e.target.value)) {
       let index = arr.indexOf(e.target.value);
@@ -105,6 +104,7 @@ function QuestFour(props) {
             favorite coding languages
           </h2>
           <Row>
+            {/* Notice we are repeating the codingIcon code below. Could you create a CodingIcon functional component here to reduce code repetition on lines 109 - 218 */}
             <Col className="codingIcon">
               <input
                 type="image"

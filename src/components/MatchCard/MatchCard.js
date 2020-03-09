@@ -18,6 +18,7 @@ function MatchCard(props) {
     axios.get(url + email).then(res => setMatch(res.data));
   }, []);
 
+  // console.log's should be deleted
   console.log(match);
 
   // const sendMatches = match => {

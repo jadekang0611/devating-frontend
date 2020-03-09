@@ -50,6 +50,7 @@ function Dashboard(props) {
     swift
   ];
 
+  // Great job with your hooks implementation!
   const [user, setUser] = useState([]);
   const [input, setInput] = useState(false);
   const [newName, setNewName] = useState('');
@@ -62,15 +63,15 @@ function Dashboard(props) {
   const updateName = e => {
     axios
       .put(updateNameUrl + '/' + newName)
-      .then(() => window.location.reload());
-
+      .then(() => window.location.reload()); // Could you trigger a component re-render with state update instead?
+    // Again, please remove all unused code from your repo. This component is currently bloated with commented out code.
     // axios
     //   .put(url + '/' + props.outfit._id, { name: newName })
     //   .then(() => window.location.reload());
   };
   const deleteEntry = () => {
     axios.delete(updateNameUrl).then(() => {
-      return (window.location.href = '/');
+      return (window.location.href = '/'); // Can we use react router to navigate back to root?
     });
   };
 
@@ -84,6 +85,8 @@ function Dashboard(props) {
     // console.log(user[0].keep[0].name);
     return (
       <div>
+        {' '}
+        {/* Instead of <div> another option is to use React fragments:https://reactjs.org/docs/fragments.html#short-syntax  */}
         <div className="dashboard-container">
           <img
             src="/images/devating-landing-logo.svg"
