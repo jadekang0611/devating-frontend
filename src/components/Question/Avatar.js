@@ -31,6 +31,7 @@ function Avatar(props) {
     person9
   ];
 
+  // e is not a descriptive variable name. You can just call it 'event'. In general, try to avoid abbreviating variables
   function handleAvatar(e) {
     e.preventDefault();
     setAvatar(e.target.value);
@@ -51,7 +52,11 @@ function Avatar(props) {
 
   return (
     <div>
-      <img src="/images/devating-landing-logo.svg" className="nav-logo" alt="logo"></img>
+      <img
+        src="/images/devating-landing-logo.svg"
+        className="nav-logo"
+        alt="logo"
+      ></img>
       <form onSubmit={handleSubmit}>
         <Container>
           <h2 className="sign-up-prompt">Select your avatar</h2>

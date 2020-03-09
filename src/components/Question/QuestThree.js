@@ -25,6 +25,7 @@ function QuestThree(props) {
   function handleToggle(e) {
     e.preventDefault();
 
+    // It would be cleaner to toggle a CSS class instead of using JS to change the CSS here
     // e.target.style.backgroundColor = 'none';
     e.target.style.borderRadius = '0';
     e.target.style.padding = '16px';
@@ -86,6 +87,7 @@ function QuestThree(props) {
             your favorite activities
           </h2>
           <Row>
+            {/* Notice we are repeating a lot of code here. Consider creating a functional component ActivitiesIcon so we can avoid repeating the logic on lines 91-164 */}
             <Col className="activitiesIcon">
               <input
                 type="image"

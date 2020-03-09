@@ -1,25 +1,24 @@
 body {
-  background: url('/images/Asset _4.svg') no-repeat center
-    center fixed;
+  background: url('/images/Asset _4.svg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   display: flex;
   flex-direction: column;
-} 
+}
 
-@media (max-width: 800px){
-body {
-  background: url('/images/mobile-background.svg') no-repeat center
-    center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-} 
+@media (max-width: 800px) {
+  body {
+    background: url('/images/mobile-background.svg') no-repeat center center
+      fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .content {
@@ -71,8 +70,6 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
 }
-
-
 
 footer {
   font-family: 'Montserrat Alternates', sans-serif;
